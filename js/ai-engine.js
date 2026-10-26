@@ -747,3 +747,5 @@ class AIEngine {
 
 // Export singleton instance
 const aiEngine = new AIEngine();
+window.aiEngine = aiEngine;
+window.AIEngine = AIEngine;

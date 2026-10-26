@@ -1,5 +1,422 @@
 [
   {
+    "id": "event-1793032637758",
+    "type": "wedding",
+    "title": "Royal Twilight Wedding",
+    "hostName": "Sarah & David",
+    "date": "2026-11-20",
+    "location": "Chicago, IL",
+    "guestCount": 120,
+    "theme": "Enchanted Garden, Elegant, Romantic",
+    "targetBudget": 15000,
+    "currency": "$",
+    "specialNotes": "Vegetarian options, outdoor backup tent, soft live music",
+    "plan": {
+      "executiveSummary": "A curated, premier wedding experience celebrating \"Royal Twilight Wedding\". Engineered for 120 guests in Chicago, IL with an immersive enchanted garden, elegant, romantic atmosphere, balanced culinary offerings, dynamic entertainment flow, and disciplined budget stewardship.",
+      "colorPalette": [
+        {
+          "name": "Deep Royal Navy",
+          "hex": "#0F172A"
+        },
+        {
+          "name": "Champagne Gold",
+          "hex": "#D4AF37"
+        },
+        {
+          "name": "Dusty Rose",
+          "hex": "#E0A9A5"
+        },
+        {
+          "name": "Ivory Frost",
+          "hex": "#F8F6F0"
+        },
+        {
+          "name": "Eucalyptus Green",
+          "hex": "#658C73"
+        }
+      ],
+      "venues": [
+        {
+          "name": "Chicago, IL Botanical Glasshouse & Lawn",
+          "type": "Indoor / Outdoor Hybrid Garden",
+          "capacity": "Up to 150 guests",
+          "pros": "Picturesque natural greenery, floor-to-ceiling glass, excellent sunset photo backdrops",
+          "cons": "Outdoor sound volume ordinances apply after 11:00 PM",
+          "estimatedCost": "$3,360 - $4,830"
+        },
+        {
+          "name": "The Grand Heritage Ballroom at Chicago, IL",
+          "type": "Historic Classical Ballroom",
+          "capacity": "Up to 168 guests",
+          "pros": "All-weather climate control, crystal chandeliers, built-in bridal suites",
+          "cons": "Requires selection from exclusive approved caterer list",
+          "estimatedCost": "$3,528 - $5,313"
+        }
+      ],
+      "decor": {
+        "concept": "A refined interpretation of \"Enchanted Garden, Elegant, Romantic\" emphasizing tactile textures, dynamic ambient lighting, and cohesive color accents.",
+        "entrance": "Immersive welcome portal featuring themed signage, custom floor vinyl runners, and welcoming ambient lanterns.",
+        "tables": "Thematic table settings with textured linens, low-profile botanical or geometric centerpieces, and warm LED micro-candles.",
+        "lighting": "Dual-layer lighting scheme pairing warm perimeter wash fixtures (2700K) with controllable spotlight accents on focal zones.",
+        "photobooth": "Customized 8x8 ft dimensional photo backdrop incorporating theme motifs, neon script headline, and curated handheld props."
+      },
+      "catering": {
+        "style": "Plated multi-course dinner with passed cocktail-hour canap\u00e9s",
+        "appetizers": [
+          "Artisanal Crostini with Whipped Ricotta & Honey Drizzle",
+          "Crispy Herb Polenta Bites with Truffle Aioli",
+          "Mini Gourmet Sliders (Beef & Plant-Based Impossible)"
+        ],
+        "mains": [
+          "Slow-Roasted Herb Crusted Entr\u00e9e with Seasonal Root Glaze",
+          "Pan-Seared Citrus Fish or Chicken with Wild Herb Infusion",
+          "Velvety Wild Mushroom & Butternut Squash Risotto (Vegan/GF)"
+        ],
+        "desserts": [
+          "Signature Celebration Cake with layered sponge",
+          "Petite Dessert Bar (Macarons, Tartlets & Espresso Shooters)"
+        ],
+        "signatureDrinks": [
+          "The Signature Sparkler (Botanical Gin or Elderflower Spritz with citrus twist)",
+          "Golden Hour Mule (Bourbon or Spiced Ginger Beer with Fresh Mint)",
+          "Berry Bliss Mocktail (Sparkling Blackberry, Thyme & Lime Soda)"
+        ],
+        "perGuestEstimate": 44
+      },
+      "entertainment": {
+        "musicGenre": "Acoustic instrumental prelude transitioning into upbeat pop & funk reception band",
+        "highlights": [
+          "Curated musical entrance with theatrical spotlight cues",
+          "Interactive host-guided celebration moments and audience engagement",
+          "High-energy late evening dance floor crescendo with lighting transitions"
+        ],
+        "keyMoments": [
+          "Welcome Reception & Cocktail Hour",
+          "Official Welcome & Host Remarks",
+          "Main Dinner & Toast Segment",
+          "Dance Floor Opening & Headline Celebration"
+        ]
+      }
+    },
+    "budget": {
+      "categories": [
+        {
+          "id": "cat-venue",
+          "name": "Venue & Facilities",
+          "icon": "building",
+          "percentage": 28,
+          "estimatedAmount": 4200,
+          "items": [
+            {
+              "id": "item-7456-1",
+              "name": "Primary Venue Space Reservation (120 capacity)",
+              "estimated": 3570,
+              "actual": 3570,
+              "paid": true,
+              "notes": "Covers standard rental window + load-in access"
+            },
+            {
+              "id": "item-7456-2",
+              "name": "Site Security & Maintenance Deposit",
+              "estimated": 630,
+              "actual": 630,
+              "paid": true,
+              "notes": "Refundable security escrow subject to post-event inspection"
+            }
+          ]
+        },
+        {
+          "id": "cat-catering",
+          "name": "Catering & Beverages",
+          "icon": "utensils",
+          "percentage": 34,
+          "estimatedAmount": 5100,
+          "items": [
+            {
+              "id": "item-7699-1",
+              "name": "Food Service (120 guests @ ~$31/person)",
+              "estimated": 3672,
+              "actual": 3672,
+              "paid": true,
+              "notes": "Includes buffet/plated setup and basic service staff"
+            },
+            {
+              "id": "item-7699-2",
+              "name": "Beverages, Mocktails & Service Ware",
+              "estimated": 1020,
+              "actual": 1020,
+              "paid": true,
+              "notes": "Assorted beverages, ice, glassware, and station supplies"
+            },
+            {
+              "id": "item-7699-3",
+              "name": "Cake & Specialty Dessert Station",
+              "estimated": 408,
+              "actual": 408,
+              "paid": false,
+              "notes": "Custom centerpiece celebration cake and pastry assortment"
+            }
+          ]
+        },
+        {
+          "id": "cat-decor",
+          "name": "Decor, Florals & Lighting",
+          "icon": "sparkles",
+          "percentage": 15,
+          "estimatedAmount": 2250,
+          "items": [
+            {
+              "id": "item-5329-1",
+              "name": "Focal Stage / Head Table Backdrop & Florals",
+              "estimated": 1238,
+              "actual": 1238,
+              "paid": false,
+              "notes": "Primary visual centerpiece installation"
+            },
+            {
+              "id": "item-5329-2",
+              "name": "Ambient Warm Lighting & Accent Rigging",
+              "estimated": 563,
+              "actual": 563,
+              "paid": false,
+              "notes": "Uplights, string lights, or mood fixtures"
+            },
+            {
+              "id": "item-5329-3",
+              "name": "Custom Interactive Photo Backdrop & Props",
+              "estimated": 449,
+              "actual": 449,
+              "paid": false,
+              "notes": "Thematic photo wall for guest memories"
+            }
+          ]
+        },
+        {
+          "id": "cat-photo",
+          "name": "Photo & Videography",
+          "icon": "camera",
+          "percentage": 11,
+          "estimatedAmount": 1650,
+          "items": [
+            {
+              "id": "item-8179-1",
+              "name": "Lead Professional Photographer (Event Coverage)",
+              "estimated": 1155,
+              "actual": 1155,
+              "paid": false,
+              "notes": "Captures full gallery of high-res edited digital photos"
+            },
+            {
+              "id": "item-8179-2",
+              "name": "Cinematic Video Highlight Reel",
+              "estimated": 495,
+              "actual": 495,
+              "paid": false,
+              "notes": "3-5 min highlight video montage"
+            }
+          ]
+        },
+        {
+          "id": "cat-entertainment",
+          "name": "Music & Entertainment",
+          "icon": "music",
+          "percentage": 8,
+          "estimatedAmount": 1200,
+          "items": [
+            {
+              "id": "item-6765-1",
+              "name": "DJ / Live Music Performance & Sound System",
+              "estimated": 900,
+              "actual": 900,
+              "paid": false,
+              "notes": "Professional audio PA system, microphones & MC hosting"
+            },
+            {
+              "id": "item-6765-2",
+              "name": "Interactive Crowd Games & Special FX",
+              "estimated": 300,
+              "actual": 300,
+              "paid": true,
+              "notes": "Confetti, sparkler sendoff, or party hosts"
+            }
+          ]
+        },
+        {
+          "id": "cat-misc",
+          "name": "Invitations, Favors & Cushion",
+          "icon": "gift",
+          "percentage": 4,
+          "estimatedAmount": 600,
+          "items": [
+            {
+              "id": "item-1383-1",
+              "name": "Invitations, Signage & Custom Favors",
+              "estimated": 300,
+              "actual": 300,
+              "paid": false,
+              "notes": "Digital/print invitations and guest takeaway gifts"
+            },
+            {
+              "id": "item-1383-2",
+              "name": "Emergency Buffer & Overtime Contingency",
+              "estimated": 300,
+              "actual": 0,
+              "paid": false,
+              "notes": "Unassigned safety cushion for unforeseen expenses"
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": [
+      {
+        "id": "chk-gen-1",
+        "title": "Review and confirm primary venue contract with deposit",
+        "milestone": "6+ Months Out",
+        "deadline": "Milestone 1",
+        "priority": "high",
+        "completed": true,
+        "notes": "Secured dates and confirmed load-in window"
+      },
+      {
+        "id": "chk-gen-2",
+        "title": "Interview & lock in lead caterer and beverage package",
+        "milestone": "6+ Months Out",
+        "deadline": "Milestone 2",
+        "priority": "high",
+        "completed": false,
+        "notes": "Requested sample tasting menu"
+      },
+      {
+        "id": "chk-gen-3",
+        "title": "Book photographer/videographer and align on shot list",
+        "milestone": "2-3 Months Out",
+        "deadline": "Milestone 3",
+        "priority": "medium",
+        "completed": false,
+        "notes": "Include candids and family portraits"
+      },
+      {
+        "id": "chk-gen-4",
+        "title": "Finalize theme decor installations, florists, and signage",
+        "milestone": "2-3 Months Out",
+        "deadline": "Milestone 4",
+        "priority": "medium",
+        "completed": false,
+        "notes": "Confirm backdrop dimensions"
+      },
+      {
+        "id": "chk-gen-5",
+        "title": "Send formal invitations & track RSVP count",
+        "milestone": "1 Month Out",
+        "deadline": "Milestone 5",
+        "priority": "high",
+        "completed": false,
+        "notes": "Track dietary restrictions"
+      },
+      {
+        "id": "chk-gen-6",
+        "title": "Finalize run-sheet with DJ/MC and test audio setup",
+        "milestone": "1 Week Out",
+        "deadline": "Milestone 6",
+        "priority": "high",
+        "completed": false,
+        "notes": "Share playlist and cue points"
+      },
+      {
+        "id": "chk-gen-7",
+        "title": "Pack day-of emergency kit and distribute vendor contact list",
+        "milestone": "Event Day",
+        "deadline": "Event Morning",
+        "priority": "high",
+        "completed": false,
+        "notes": "Ensure all key coordinators have mobile numbers"
+      }
+    ],
+    "schedule": [
+      {
+        "time": "12:00 PM",
+        "title": "Vendor Load-In & Decor Setup",
+        "description": "Florists, lighting techs, and sound engineers arrive.",
+        "category": "Setup",
+        "icon": "truck"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "Bridal Party & Host Prep",
+        "description": "Hair, makeup, and pre-ceremony photography.",
+        "category": "Prep",
+        "icon": "camera"
+      },
+      {
+        "time": "04:30 PM",
+        "title": "Guest Arrival & Welcome Music",
+        "description": "Acoustic music plays as guests find their seats.",
+        "category": "Reception",
+        "icon": "users"
+      },
+      {
+        "time": "05:00 PM",
+        "title": "Ceremony Begins",
+        "description": "Processional, exchange of vows, and celebration recessional.",
+        "category": "Ceremony",
+        "icon": "heart"
+      },
+      {
+        "time": "05:45 PM",
+        "title": "Cocktail Hour & Passed Bites",
+        "description": "Signature drinks served while portraits are taken.",
+        "category": "Food",
+        "icon": "glass-water"
+      },
+      {
+        "time": "07:00 PM",
+        "title": "Grand Entry & Dinner Service",
+        "description": "Welcome toasts, plated/buffet dinner, and dessert.",
+        "category": "Dinner",
+        "icon": "utensils"
+      },
+      {
+        "time": "08:30 PM",
+        "title": "First Dance & Dance Floor Opens",
+        "description": "High-energy celebration music and dancing.",
+        "category": "Party",
+        "icon": "music"
+      },
+      {
+        "time": "11:00 PM",
+        "title": "Grand Sendoff & Event Conclusion",
+        "description": "Sparklers or celebratory farewell promenade.",
+        "category": "Farewell",
+        "icon": "star"
+      }
+    ],
+    "vendors": [
+      {
+        "id": "v-sugg-1",
+        "category": "Venue",
+        "name": "Premier Event Space (Chicago, IL)",
+        "contactPerson": "Venue Events Coordinator",
+        "phone": "+1 (555) 012-3400",
+        "email": "inquiries@premiereventspace.com",
+        "status": "Researching",
+        "quoteAmount": 4200,
+        "notes": "Inquiry submitted for availability on target date."
+      },
+      {
+        "id": "v-sugg-2",
+        "category": "Catering",
+        "name": "Artisan Culinary Co.",
+        "contactPerson": "Head Catering Sales Manager",
+        "phone": "+1 (555) 012-7800",
+        "email": "orders@artisanculinaryco.com",
+        "status": "Researching",
+        "quoteAmount": 5100,
+        "notes": "Requested customized seasonal menu proposal."
+      }
+    ]
+  },
+  {
     "id": "event-1",
     "type": "wedding",
     "title": "Royal Botanical Garden Wedding",
@@ -16,11 +433,26 @@
     "plan": {
       "executiveSummary": "A breathtaking celebration marrying historic botanical garden elegance with modern twilight romance. Natural floral arches, warm fairy lights, and an immersive culinary journey create an intimate atmosphere for 200 cherished guests.",
       "colorPalette": [
-        { "name": "Deep Emerald", "hex": "#064E3B" },
-        { "name": "Dusty Rose", "hex": "#E0A9A5" },
-        { "name": "Champagne Gold", "hex": "#D4AF37" },
-        { "name": "Ivory Silk", "hex": "#F8F6F0" },
-        { "name": "Sage Green", "hex": "#84A98C" }
+        {
+          "name": "Deep Emerald",
+          "hex": "#064E3B"
+        },
+        {
+          "name": "Dusty Rose",
+          "hex": "#E0A9A5"
+        },
+        {
+          "name": "Champagne Gold",
+          "hex": "#D4AF37"
+        },
+        {
+          "name": "Ivory Silk",
+          "hex": "#F8F6F0"
+        },
+        {
+          "name": "Sage Green",
+          "hex": "#84A98C"
+        }
       ],
       "venues": [
         {
@@ -57,10 +489,25 @@
       },
       "catering": {
         "style": "Dual-plated plated dinner preceded by interactive cocktail hour chef stations.",
-        "appetizers": ["Brie & Fig Puff Pastry Tartlets", "Smoked Salmon Crostini with Dill Cream", "Prosciutto-Wrapped Asparagus Tips"],
-        "mains": ["Pan-Seared Sea Bass with Lemon Caper Emulsion", "Slow-Braised Short Ribs over Truffled Polenta", "Wild Mushroom Risotto with Herb Crisp (Vegan)"],
-        "desserts": ["Tiered Naked Lemon-Lavender Wedding Cake", "Miniature Salted Caramel Crème Brûlées", "Late-Night Woodfired Artisan Pizzas"],
-        "signatureDrinks": ["The 'Blushing Bride' (Elderflower Gin Fizz with Rose Petals)", "The 'Savannah Dusk' (Bourbon, Blackberry Puree, Fresh Thyme)"],
+        "appetizers": [
+          "Brie & Fig Puff Pastry Tartlets",
+          "Smoked Salmon Crostini with Dill Cream",
+          "Prosciutto-Wrapped Asparagus Tips"
+        ],
+        "mains": [
+          "Pan-Seared Sea Bass with Lemon Caper Emulsion",
+          "Slow-Braised Short Ribs over Truffled Polenta",
+          "Wild Mushroom Risotto with Herb Crisp (Vegan)"
+        ],
+        "desserts": [
+          "Tiered Naked Lemon-Lavender Wedding Cake",
+          "Miniature Salted Caramel Cr\u00e8me Br\u00fbl\u00e9es",
+          "Late-Night Woodfired Artisan Pizzas"
+        ],
+        "signatureDrinks": [
+          "The 'Blushing Bride' (Elderflower Gin Fizz with Rose Petals)",
+          "The 'Savannah Dusk' (Bourbon, Blackberry Puree, Fresh Thyme)"
+        ],
         "perGuestEstimate": 65
       },
       "entertainment": {
@@ -71,7 +518,13 @@
           "Choreographed first dance with low-lying dry ice cloud effect",
           "Cold-spark fountain sendoff at midnight"
         ],
-        "keyMoments": ["First Look: 3:30 PM", "Vows: 5:00 PM", "Cocktail Hour: 5:45 PM", "Grand Entry: 7:00 PM", "Cake Cutting: 8:45 PM"]
+        "keyMoments": [
+          "First Look: 3:30 PM",
+          "Vows: 5:00 PM",
+          "Cocktail Hour: 5:45 PM",
+          "Grand Entry: 7:00 PM",
+          "Cake Cutting: 8:45 PM"
+        ]
       }
     },
     "budget": {
@@ -83,8 +536,22 @@
           "percentage": 26,
           "estimatedAmount": 9100,
           "items": [
-            { "id": "b-1", "name": "Conservatory Rental (10 hrs)", "estimated": 8500, "actual": 8500, "paid": true, "notes": "Deposit paid on contract signing" },
-            { "id": "b-2", "name": "Bridal Suite & Groom Lounge fee", "estimated": 600, "actual": 550, "paid": true, "notes": "Early access from 10 AM included" }
+            {
+              "id": "b-1",
+              "name": "Conservatory Rental (10 hrs)",
+              "estimated": 8500,
+              "actual": 8500,
+              "paid": true,
+              "notes": "Deposit paid on contract signing"
+            },
+            {
+              "id": "b-2",
+              "name": "Bridal Suite & Groom Lounge fee",
+              "estimated": 600,
+              "actual": 550,
+              "paid": true,
+              "notes": "Early access from 10 AM included"
+            }
           ]
         },
         {
@@ -94,9 +561,30 @@
           "percentage": 34,
           "estimatedAmount": 11900,
           "items": [
-            { "id": "b-3", "name": "Plated 3-Course Dinner (200 guests @ $45/pp)", "estimated": 9000, "actual": 9200, "paid": false, "notes": "Includes service staff and china" },
-            { "id": "b-4", "name": "Open Bar Package & Signature Cocktails", "estimated": 2200, "actual": 2100, "paid": false, "notes": "4 hours open bar + 2 licensed bartenders" },
-            { "id": "b-5", "name": "Wedding Cake & Dessert Station", "estimated": 700, "actual": 650, "paid": true, "notes": "Tasting completed and deposit secured" }
+            {
+              "id": "b-3",
+              "name": "Plated 3-Course Dinner (200 guests @ $45/pp)",
+              "estimated": 9000,
+              "actual": 9200,
+              "paid": false,
+              "notes": "Includes service staff and china"
+            },
+            {
+              "id": "b-4",
+              "name": "Open Bar Package & Signature Cocktails",
+              "estimated": 2200,
+              "actual": 2100,
+              "paid": false,
+              "notes": "4 hours open bar + 2 licensed bartenders"
+            },
+            {
+              "id": "b-5",
+              "name": "Wedding Cake & Dessert Station",
+              "estimated": 700,
+              "actual": 650,
+              "paid": true,
+              "notes": "Tasting completed and deposit secured"
+            }
           ]
         },
         {
@@ -106,9 +594,30 @@
           "percentage": 15,
           "estimatedAmount": 5250,
           "items": [
-            { "id": "b-6", "name": "Ceremony Arch & Living Floral Installations", "estimated": 2400, "actual": 2500, "paid": true, "notes": "Custom garden rose & greenery arrangement" },
-            { "id": "b-7", "name": "Table Centerpieces & Velvet Runners", "estimated": 1600, "actual": 1500, "paid": false, "notes": "20 tables @ $75/table" },
-            { "id": "b-8", "name": "Canopy Fairy Lighting & Uplights", "estimated": 1250, "actual": 1200, "paid": false, "notes": "Setup begins at 11 AM" }
+            {
+              "id": "b-6",
+              "name": "Ceremony Arch & Living Floral Installations",
+              "estimated": 2400,
+              "actual": 2500,
+              "paid": true,
+              "notes": "Custom garden rose & greenery arrangement"
+            },
+            {
+              "id": "b-7",
+              "name": "Table Centerpieces & Velvet Runners",
+              "estimated": 1600,
+              "actual": 1500,
+              "paid": false,
+              "notes": "20 tables @ $75/table"
+            },
+            {
+              "id": "b-8",
+              "name": "Canopy Fairy Lighting & Uplights",
+              "estimated": 1250,
+              "actual": 1200,
+              "paid": false,
+              "notes": "Setup begins at 11 AM"
+            }
           ]
         },
         {
@@ -118,8 +627,22 @@
           "percentage": 11,
           "estimatedAmount": 3850,
           "items": [
-            { "id": "b-9", "name": "Lead Photographer + Second Shooter (8 hrs)", "estimated": 2600, "actual": 2600, "paid": true, "notes": "Includes drone aerial footage + engagement album" },
-            { "id": "b-10", "name": "Cinematic Highlight Film (4K)", "estimated": 1250, "actual": 1250, "paid": false, "notes": "Teaser delivered within 72 hrs" }
+            {
+              "id": "b-9",
+              "name": "Lead Photographer + Second Shooter (8 hrs)",
+              "estimated": 2600,
+              "actual": 2600,
+              "paid": true,
+              "notes": "Includes drone aerial footage + engagement album"
+            },
+            {
+              "id": "b-10",
+              "name": "Cinematic Highlight Film (4K)",
+              "estimated": 1250,
+              "actual": 1250,
+              "paid": false,
+              "notes": "Teaser delivered within 72 hrs"
+            }
           ]
         },
         {
@@ -129,8 +652,22 @@
           "percentage": 9,
           "estimatedAmount": 3150,
           "items": [
-            { "id": "b-11", "name": "Ceremony Strings Duo (Harp & Cello)", "estimated": 950, "actual": 900, "paid": true, "notes": "30 min prelude + ceremony + recessional" },
-            { "id": "b-12", "name": "Reception 6-Piece Funk & Pop Band + Sound", "estimated": 2200, "actual": 2300, "paid": false, "notes": "Includes MC services & wireless mics" }
+            {
+              "id": "b-11",
+              "name": "Ceremony Strings Duo (Harp & Cello)",
+              "estimated": 950,
+              "actual": 900,
+              "paid": true,
+              "notes": "30 min prelude + ceremony + recessional"
+            },
+            {
+              "id": "b-12",
+              "name": "Reception 6-Piece Funk & Pop Band + Sound",
+              "estimated": 2200,
+              "actual": 2300,
+              "paid": false,
+              "notes": "Includes MC services & wireless mics"
+            }
           ]
         },
         {
@@ -140,36 +677,195 @@
           "percentage": 5,
           "estimatedAmount": 1750,
           "items": [
-            { "id": "b-13", "name": "Custom Foil Invitations & Calligraphy RSVP", "estimated": 650, "actual": 620, "paid": true, "notes": "Wax sealed and mailed" },
-            { "id": "b-14", "name": "Guest Favors (Savannah Wildflower Honey jars)", "estimated": 500, "actual": 480, "paid": true, "notes": "Hand-tagged 200 jars" },
-            { "id": "b-15", "name": "Emergency Cushion & Contingency Fund", "estimated": 600, "actual": 0, "paid": false, "notes": "Reserved for last-minute needs" }
+            {
+              "id": "b-13",
+              "name": "Custom Foil Invitations & Calligraphy RSVP",
+              "estimated": 650,
+              "actual": 620,
+              "paid": true,
+              "notes": "Wax sealed and mailed"
+            },
+            {
+              "id": "b-14",
+              "name": "Guest Favors (Savannah Wildflower Honey jars)",
+              "estimated": 500,
+              "actual": 480,
+              "paid": true,
+              "notes": "Hand-tagged 200 jars"
+            },
+            {
+              "id": "b-15",
+              "name": "Emergency Cushion & Contingency Fund",
+              "estimated": 600,
+              "actual": 0,
+              "paid": false,
+              "notes": "Reserved for last-minute needs"
+            }
           ]
         }
       ]
     },
     "checklist": [
-      { "id": "chk-1", "title": "Finalize Conservatory booking and execute contract", "milestone": "6+ Months Out", "deadline": "2026-05-15", "priority": "high", "completed": true, "notes": "Contract signed, 50% deposit processed" },
-      { "id": "chk-2", "title": "Hire lead photographer and schedule engagement photoshoot", "milestone": "6+ Months Out", "deadline": "2026-06-01", "priority": "high", "completed": true, "notes": "Portfolio verified and retainer paid" },
-      { "id": "chk-3", "title": "Menu and wine tasting with gourmet caterer", "milestone": "2-3 Months Out", "deadline": "2026-08-20", "priority": "medium", "completed": true, "notes": "Selected sea bass and braised short ribs" },
-      { "id": "chk-4", "title": "Send formal invitation suite and launch RSVP web portal", "milestone": "2-3 Months Out", "deadline": "2026-09-01", "priority": "high", "completed": true, "notes": "RSVP deadline set for Oct 10" },
-      { "id": "chk-5", "title": "Conduct floral mock-up and finalize table arrangements", "milestone": "1 Month Out", "deadline": "2026-10-15", "priority": "medium", "completed": true, "notes": "Reviewed linen samples and brass taper holders" },
-      { "id": "chk-6", "title": "Final headcount confirmation with caterer and seating chart", "milestone": "1 Month Out", "deadline": "2026-10-25", "priority": "high", "completed": false, "notes": "Awaiting 8 pending RSVPs" },
-      { "id": "chk-7", "title": "Submit ceremony playlist and 'do not play' list to band", "milestone": "1 Week Out", "deadline": "2026-11-07", "priority": "medium", "completed": false, "notes": "Band leader confirmed rehearsal" },
-      { "id": "chk-8", "title": "Pack bridal emergency kit (steamer, pins, flats, mints)", "milestone": "1 Week Out", "deadline": "2026-11-12", "priority": "low", "completed": false, "notes": "Kit prepared in bridal suite travel bag" },
-      { "id": "chk-9", "title": "Marriage license pickup and officiant briefing", "milestone": "Event Day", "deadline": "2026-11-14", "priority": "high", "completed": false, "notes": "Assigned to maid of honor for safe keeping" }
+      {
+        "id": "chk-1",
+        "title": "Finalize Conservatory booking and execute contract",
+        "milestone": "6+ Months Out",
+        "deadline": "2026-05-15",
+        "priority": "high",
+        "completed": true,
+        "notes": "Contract signed, 50% deposit processed"
+      },
+      {
+        "id": "chk-2",
+        "title": "Hire lead photographer and schedule engagement photoshoot",
+        "milestone": "6+ Months Out",
+        "deadline": "2026-06-01",
+        "priority": "high",
+        "completed": true,
+        "notes": "Portfolio verified and retainer paid"
+      },
+      {
+        "id": "chk-3",
+        "title": "Menu and wine tasting with gourmet caterer",
+        "milestone": "2-3 Months Out",
+        "deadline": "2026-08-20",
+        "priority": "medium",
+        "completed": true,
+        "notes": "Selected sea bass and braised short ribs"
+      },
+      {
+        "id": "chk-4",
+        "title": "Send formal invitation suite and launch RSVP web portal",
+        "milestone": "2-3 Months Out",
+        "deadline": "2026-09-01",
+        "priority": "high",
+        "completed": true,
+        "notes": "RSVP deadline set for Oct 10"
+      },
+      {
+        "id": "chk-5",
+        "title": "Conduct floral mock-up and finalize table arrangements",
+        "milestone": "1 Month Out",
+        "deadline": "2026-10-15",
+        "priority": "medium",
+        "completed": true,
+        "notes": "Reviewed linen samples and brass taper holders"
+      },
+      {
+        "id": "chk-6",
+        "title": "Final headcount confirmation with caterer and seating chart",
+        "milestone": "1 Month Out",
+        "deadline": "2026-10-25",
+        "priority": "high",
+        "completed": false,
+        "notes": "Awaiting 8 pending RSVPs"
+      },
+      {
+        "id": "chk-7",
+        "title": "Submit ceremony playlist and 'do not play' list to band",
+        "milestone": "1 Week Out",
+        "deadline": "2026-11-07",
+        "priority": "medium",
+        "completed": false,
+        "notes": "Band leader confirmed rehearsal"
+      },
+      {
+        "id": "chk-8",
+        "title": "Pack bridal emergency kit (steamer, pins, flats, mints)",
+        "milestone": "1 Week Out",
+        "deadline": "2026-11-12",
+        "priority": "low",
+        "completed": false,
+        "notes": "Kit prepared in bridal suite travel bag"
+      },
+      {
+        "id": "chk-9",
+        "title": "Marriage license pickup and officiant briefing",
+        "milestone": "Event Day",
+        "deadline": "2026-11-14",
+        "priority": "high",
+        "completed": false,
+        "notes": "Assigned to maid of honor for safe keeping"
+      }
     ],
     "schedule": [
-      { "time": "10:00 AM", "title": "Bridal Suite & Groom Lounge Open", "description": "Hair & makeup artists arrive. Mimosa bar and light brunch served.", "category": "Prep", "icon": "sparkles" },
-      { "time": "11:30 AM", "title": "Florist & Decor Setup Begins", "description": "Conservatory arch construction, table linens, and lighting rig install.", "category": "Logistics", "icon": "truck" },
-      { "time": "02:00 PM", "title": "Photographer & Videographer Arrival", "description": "Detail flat-lays, dress shots, and getting-ready candids.", "category": "Media", "icon": "camera" },
-      { "time": "03:30 PM", "title": "Private First Look & Couple Portraits", "description": "Intimate moment in the secret botanical garden courtyard.", "category": "Photo", "icon": "heart" },
-      { "time": "04:30 PM", "title": "Guest Arrival & Welcome Refreshments", "description": "Acoustic strings begin prelude music. Sparkling lavender lemonade offered.", "category": "Ceremony", "icon": "users" },
-      { "time": "05:00 PM", "title": "Wedding Ceremony", "description": "Processional, personal vows, ring exchange, and grand recessional.", "category": "Ceremony", "icon": "ring" },
-      { "time": "05:45 PM", "title": "Sunset Cocktail Hour", "description": "Signature cocktails, passed hors d'oeuvres, and sunset terrace mingling.", "category": "Reception", "icon": "glass-water" },
-      { "time": "07:00 PM", "title": "Grand Entrance & Plated Dinner", "description": "Welcome toasts, blessing, and 3-course dinner service.", "category": "Dinner", "icon": "utensils" },
-      { "time": "08:15 PM", "title": "First Dance & Parent Dances", "description": "Low-lying fog effect for choreographed first dance.", "category": "Party", "icon": "music" },
-      { "time": "08:45 PM", "title": "Cake Cutting & Dessert Bar", "description": "Celebratory champagne toast followed by high-energy dance floor opening.", "category": "Party", "icon": "cake" },
-      { "time": "11:45 PM", "title": "Cold-Spark Fountain Grand Sendoff", "description": "Farewell promenade through sparkling fountains to getaway vintage roadster.", "category": "Farewell", "icon": "star" }
+      {
+        "time": "10:00 AM",
+        "title": "Bridal Suite & Groom Lounge Open",
+        "description": "Hair & makeup artists arrive. Mimosa bar and light brunch served.",
+        "category": "Prep",
+        "icon": "sparkles"
+      },
+      {
+        "time": "11:30 AM",
+        "title": "Florist & Decor Setup Begins",
+        "description": "Conservatory arch construction, table linens, and lighting rig install.",
+        "category": "Logistics",
+        "icon": "truck"
+      },
+      {
+        "time": "02:00 PM",
+        "title": "Photographer & Videographer Arrival",
+        "description": "Detail flat-lays, dress shots, and getting-ready candids.",
+        "category": "Media",
+        "icon": "camera"
+      },
+      {
+        "time": "03:30 PM",
+        "title": "Private First Look & Couple Portraits",
+        "description": "Intimate moment in the secret botanical garden courtyard.",
+        "category": "Photo",
+        "icon": "heart"
+      },
+      {
+        "time": "04:30 PM",
+        "title": "Guest Arrival & Welcome Refreshments",
+        "description": "Acoustic strings begin prelude music. Sparkling lavender lemonade offered.",
+        "category": "Ceremony",
+        "icon": "users"
+      },
+      {
+        "time": "05:00 PM",
+        "title": "Wedding Ceremony",
+        "description": "Processional, personal vows, ring exchange, and grand recessional.",
+        "category": "Ceremony",
+        "icon": "ring"
+      },
+      {
+        "time": "05:45 PM",
+        "title": "Sunset Cocktail Hour",
+        "description": "Signature cocktails, passed hors d'oeuvres, and sunset terrace mingling.",
+        "category": "Reception",
+        "icon": "glass-water"
+      },
+      {
+        "time": "07:00 PM",
+        "title": "Grand Entrance & Plated Dinner",
+        "description": "Welcome toasts, blessing, and 3-course dinner service.",
+        "category": "Dinner",
+        "icon": "utensils"
+      },
+      {
+        "time": "08:15 PM",
+        "title": "First Dance & Parent Dances",
+        "description": "Low-lying fog effect for choreographed first dance.",
+        "category": "Party",
+        "icon": "music"
+      },
+      {
+        "time": "08:45 PM",
+        "title": "Cake Cutting & Dessert Bar",
+        "description": "Celebratory champagne toast followed by high-energy dance floor opening.",
+        "category": "Party",
+        "icon": "cake"
+      },
+      {
+        "time": "11:45 PM",
+        "title": "Cold-Spark Fountain Grand Sendoff",
+        "description": "Farewell promenade through sparkling fountains to getaway vintage roadster.",
+        "category": "Farewell",
+        "icon": "star"
+      }
     ],
     "vendors": [
       {
@@ -197,7 +893,7 @@
       {
         "id": "v-3",
         "category": "Photography",
-        "name": "Lumière Garden Studio",
+        "name": "Lumi\u00e8re Garden Studio",
         "contactPerson": "Claire Moreau",
         "phone": "+1 (912) 555-0219",
         "email": "claire@lumierestudio.com",
@@ -246,11 +942,26 @@
     "plan": {
       "executiveSummary": "An electrifying neon underworld experience commemorating a milestone 21st birthday. Industrial loft aesthetics, reactive UV lighting, retro arcade pods, and high-energy electronic beats.",
       "colorPalette": [
-        { "name": "Cyber Cyan", "hex": "#00F0FF" },
-        { "name": "Neon Magenta", "hex": "#FF007F" },
-        { "name": "Electric Violet", "hex": "#7928CA" },
-        { "name": "Matte Obsidian", "hex": "#111827" },
-        { "name": "Laser Lime", "hex": "#39FF14" }
+        {
+          "name": "Cyber Cyan",
+          "hex": "#00F0FF"
+        },
+        {
+          "name": "Neon Magenta",
+          "hex": "#FF007F"
+        },
+        {
+          "name": "Electric Violet",
+          "hex": "#7928CA"
+        },
+        {
+          "name": "Matte Obsidian",
+          "hex": "#111827"
+        },
+        {
+          "name": "Laser Lime",
+          "hex": "#39FF14"
+        }
       ],
       "venues": [
         {
@@ -279,10 +990,23 @@
       },
       "catering": {
         "style": "Night-market street food bites and liquid nitrogen glowing mocktails/cocktails.",
-        "appetizers": ["Tokyo Street Yakitori Skewers", "Korean Fried Chicken Bao Buns", "Loaded Truffle Waffle Fries"],
-        "mains": ["Gourmet Sliders on Charcoal Brioche", "Spicy Dan Dan Noodle Bowls in take-out boxes"],
-        "desserts": ["Neon Glazed Mochi Donuts", "Liquid Nitrogen Dragon Breath Popcorn"],
-        "signatureDrinks": ["The 'Glitch in the Matrix' (Blue Curaçao, Vodka, Glow Tonic with UV activation)", "The 'Cyber Stride' (Dragonfruit, Lime, Ginger Beer)"],
+        "appetizers": [
+          "Tokyo Street Yakitori Skewers",
+          "Korean Fried Chicken Bao Buns",
+          "Loaded Truffle Waffle Fries"
+        ],
+        "mains": [
+          "Gourmet Sliders on Charcoal Brioche",
+          "Spicy Dan Dan Noodle Bowls in take-out boxes"
+        ],
+        "desserts": [
+          "Neon Glazed Mochi Donuts",
+          "Liquid Nitrogen Dragon Breath Popcorn"
+        ],
+        "signatureDrinks": [
+          "The 'Glitch in the Matrix' (Blue Cura\u00e7ao, Vodka, Glow Tonic with UV activation)",
+          "The 'Cyber Stride' (Dragonfruit, Lime, Ginger Beer)"
+        ],
         "perGuestEstimate": 32
       },
       "entertainment": {
@@ -292,7 +1016,11 @@
           "Street Fighter II & Mario Kart multiplayer tournament on 150-inch projector",
           "Midnight countdown with CO2 cryo-cannon blast"
         ],
-        "keyMoments": ["Doors Open: 8:00 PM", "Arcade Tournament Finals: 10:30 PM", "Midnight Cryo Blast: 12:00 AM"]
+        "keyMoments": [
+          "Doors Open: 8:00 PM",
+          "Arcade Tournament Finals: 10:30 PM",
+          "Midnight Cryo Blast: 12:00 AM"
+        ]
       }
     },
     "budget": {
@@ -304,8 +1032,22 @@
           "percentage": 28,
           "estimatedAmount": 1820,
           "items": [
-            { "id": "b-21", "name": "Warehouse Loft Rental (7 hrs)", "estimated": 1600, "actual": 1600, "paid": true, "notes": "Security deposit included" },
-            { "id": "b-22", "name": "Special Event Audio & Night Permit", "estimated": 220, "actual": 200, "paid": true, "notes": "City permit granted" }
+            {
+              "id": "b-21",
+              "name": "Warehouse Loft Rental (7 hrs)",
+              "estimated": 1600,
+              "actual": 1600,
+              "paid": true,
+              "notes": "Security deposit included"
+            },
+            {
+              "id": "b-22",
+              "name": "Special Event Audio & Night Permit",
+              "estimated": 220,
+              "actual": 200,
+              "paid": true,
+              "notes": "City permit granted"
+            }
           ]
         },
         {
@@ -315,8 +1057,22 @@
           "percentage": 32,
           "estimatedAmount": 2080,
           "items": [
-            { "id": "b-23", "name": "Asian Fusion Food Truck Minimum (80 guests)", "estimated": 1500, "actual": 1550, "paid": false, "notes": "Unlimited bao and sliders for 3 hrs" },
-            { "id": "b-24", "name": "UV Reactive Bar Ingredients & Kegs", "estimated": 580, "actual": 600, "paid": false, "notes": "Special quinine tonic for blacklight glow" }
+            {
+              "id": "b-23",
+              "name": "Asian Fusion Food Truck Minimum (80 guests)",
+              "estimated": 1500,
+              "actual": 1550,
+              "paid": false,
+              "notes": "Unlimited bao and sliders for 3 hrs"
+            },
+            {
+              "id": "b-24",
+              "name": "UV Reactive Bar Ingredients & Kegs",
+              "estimated": 580,
+              "actual": 600,
+              "paid": false,
+              "notes": "Special quinine tonic for blacklight glow"
+            }
           ]
         },
         {
@@ -326,9 +1082,30 @@
           "percentage": 20,
           "estimatedAmount": 1300,
           "items": [
-            { "id": "b-25", "name": "High-Power UV Cannons & Laser Beams Rental", "estimated": 750, "actual": 700, "paid": true, "notes": "Tech delivery and rigging on Friday" },
-            { "id": "b-26", "name": "Custom 'KAIRO 21' Neon Flex Sign", "estimated": 350, "actual": 340, "paid": true, "notes": "Keepsake sign after the party" },
-            { "id": "b-27", "name": "UV Body Paint Supplies & Glow Accessories", "estimated": 200, "actual": 180, "paid": true, "notes": "500 glow sticks, neon tapes, and glasses" }
+            {
+              "id": "b-25",
+              "name": "High-Power UV Cannons & Laser Beams Rental",
+              "estimated": 750,
+              "actual": 700,
+              "paid": true,
+              "notes": "Tech delivery and rigging on Friday"
+            },
+            {
+              "id": "b-26",
+              "name": "Custom 'KAIRO 21' Neon Flex Sign",
+              "estimated": 350,
+              "actual": 340,
+              "paid": true,
+              "notes": "Keepsake sign after the party"
+            },
+            {
+              "id": "b-27",
+              "name": "UV Body Paint Supplies & Glow Accessories",
+              "estimated": 200,
+              "actual": 180,
+              "paid": true,
+              "notes": "500 glow sticks, neon tapes, and glasses"
+            }
           ]
         },
         {
@@ -338,8 +1115,22 @@
           "percentage": 15,
           "estimatedAmount": 975,
           "items": [
-            { "id": "b-28", "name": "Club Resident DJ + Sound Equipment (4 hrs)", "estimated": 700, "actual": 750, "paid": false, "notes": "Custom synthwave transition set" },
-            { "id": "b-29", "name": "CO2 Blast Cannon Rental & Tank", "estimated": 275, "actual": 250, "paid": false, "notes": "Midnight celebration drop" }
+            {
+              "id": "b-28",
+              "name": "Club Resident DJ + Sound Equipment (4 hrs)",
+              "estimated": 700,
+              "actual": 750,
+              "paid": false,
+              "notes": "Custom synthwave transition set"
+            },
+            {
+              "id": "b-29",
+              "name": "CO2 Blast Cannon Rental & Tank",
+              "estimated": 275,
+              "actual": 250,
+              "paid": false,
+              "notes": "Midnight celebration drop"
+            }
           ]
         },
         {
@@ -349,26 +1140,115 @@
           "percentage": 5,
           "estimatedAmount": 325,
           "items": [
-            { "id": "b-30", "name": "Flash & Neon Nightlife Photographer (3 hrs)", "estimated": 325, "actual": 325, "paid": false, "notes": "Delivers 100 edited high-contrast photos" }
+            {
+              "id": "b-30",
+              "name": "Flash & Neon Nightlife Photographer (3 hrs)",
+              "estimated": 325,
+              "actual": 325,
+              "paid": false,
+              "notes": "Delivers 100 edited high-contrast photos"
+            }
           ]
         }
       ]
     },
     "checklist": [
-      { "id": "chk-21", "title": "Reserve District 7 Loft and sign noise agreements", "milestone": "2-3 Months Out", "deadline": "2026-10-01", "priority": "high", "completed": true, "notes": "Deposit confirmed" },
-      { "id": "chk-22", "title": "Lock in Asian Fusion food truck booking", "milestone": "1 Month Out", "deadline": "2026-11-05", "priority": "high", "completed": true, "notes": "Dietary options for vegetarians secured" },
-      { "id": "chk-23", "title": "Order custom neon flex sign with birthday name", "milestone": "1 Month Out", "deadline": "2026-11-10", "priority": "medium", "completed": true, "notes": "Delivered and tested" },
-      { "id": "chk-24", "title": "Curate Spotify sample vibe playlist for DJ alignment", "milestone": "1 Week Out", "deadline": "2026-11-28", "priority": "medium", "completed": true, "notes": "Shared with DJ" },
-      { "id": "chk-25", "title": "Pickup CO2 cryo-cannon and safety goggles", "milestone": "Event Day", "deadline": "2026-12-05", "priority": "high", "completed": false, "notes": "Assigned to co-host" }
+      {
+        "id": "chk-21",
+        "title": "Reserve District 7 Loft and sign noise agreements",
+        "milestone": "2-3 Months Out",
+        "deadline": "2026-10-01",
+        "priority": "high",
+        "completed": true,
+        "notes": "Deposit confirmed"
+      },
+      {
+        "id": "chk-22",
+        "title": "Lock in Asian Fusion food truck booking",
+        "milestone": "1 Month Out",
+        "deadline": "2026-11-05",
+        "priority": "high",
+        "completed": true,
+        "notes": "Dietary options for vegetarians secured"
+      },
+      {
+        "id": "chk-23",
+        "title": "Order custom neon flex sign with birthday name",
+        "milestone": "1 Month Out",
+        "deadline": "2026-11-10",
+        "priority": "medium",
+        "completed": true,
+        "notes": "Delivered and tested"
+      },
+      {
+        "id": "chk-24",
+        "title": "Curate Spotify sample vibe playlist for DJ alignment",
+        "milestone": "1 Week Out",
+        "deadline": "2026-11-28",
+        "priority": "medium",
+        "completed": true,
+        "notes": "Shared with DJ"
+      },
+      {
+        "id": "chk-25",
+        "title": "Pickup CO2 cryo-cannon and safety goggles",
+        "milestone": "Event Day",
+        "deadline": "2026-12-05",
+        "priority": "high",
+        "completed": false,
+        "notes": "Assigned to co-host"
+      }
     ],
     "schedule": [
-      { "time": "05:00 PM", "title": "Load-in & Lighting Rigging", "description": "UV blacklights, lasers, and haze machines setup.", "category": "Setup", "icon": "truck" },
-      { "time": "07:30 PM", "title": "Food Truck Parking & Power Hookup", "description": "Street food service warms up.", "category": "Food", "icon": "utensils" },
-      { "time": "08:00 PM", "title": "Doors Open & Neon Body Paint Station", "description": "Guests receive glowing bracelets and blacklight face designs.", "category": "Reception", "icon": "users" },
-      { "time": "09:30 PM", "title": "DJ Takes the Decks", "description": "Bass drops and high-energy party mix starts.", "category": "Party", "icon": "music" },
-      { "time": "11:55 PM", "title": "Birthday Countdown", "description": "Lights dim to pure blacklight, champagne bottles pop.", "category": "Celebration", "icon": "sparkles" },
-      { "time": "12:00 AM", "title": "CO2 Blast & Beat Drop", "description": "Dual cryo-cannon blast illuminates the dance floor.", "category": "Party", "icon": "star" },
-      { "time": "02:00 AM", "title": "Event Concludes & Rideshare Coordinated", "description": "Taxis and designated drivers assist guests home.", "category": "Wrap-up", "icon": "clock" }
+      {
+        "time": "05:00 PM",
+        "title": "Load-in & Lighting Rigging",
+        "description": "UV blacklights, lasers, and haze machines setup.",
+        "category": "Setup",
+        "icon": "truck"
+      },
+      {
+        "time": "07:30 PM",
+        "title": "Food Truck Parking & Power Hookup",
+        "description": "Street food service warms up.",
+        "category": "Food",
+        "icon": "utensils"
+      },
+      {
+        "time": "08:00 PM",
+        "title": "Doors Open & Neon Body Paint Station",
+        "description": "Guests receive glowing bracelets and blacklight face designs.",
+        "category": "Reception",
+        "icon": "users"
+      },
+      {
+        "time": "09:30 PM",
+        "title": "DJ Takes the Decks",
+        "description": "Bass drops and high-energy party mix starts.",
+        "category": "Party",
+        "icon": "music"
+      },
+      {
+        "time": "11:55 PM",
+        "title": "Birthday Countdown",
+        "description": "Lights dim to pure blacklight, champagne bottles pop.",
+        "category": "Celebration",
+        "icon": "sparkles"
+      },
+      {
+        "time": "12:00 AM",
+        "title": "CO2 Blast & Beat Drop",
+        "description": "Dual cryo-cannon blast illuminates the dance floor.",
+        "category": "Party",
+        "icon": "star"
+      },
+      {
+        "time": "02:00 AM",
+        "title": "Event Concludes & Rideshare Coordinated",
+        "description": "Taxis and designated drivers assist guests home.",
+        "category": "Wrap-up",
+        "icon": "clock"
+      }
     ],
     "vendors": [
       {
@@ -423,11 +1303,26 @@
     "plan": {
       "executiveSummary": "A flagship multi-disciplinary university festival uniting 500 students, faculty, and industry pioneers. Features an innovation exhibition, hackathon demo pit, culinary food stalls, and an evening cultural headline concert.",
       "colorPalette": [
-        { "name": "Electric Indigo", "hex": "#4F46E5" },
-        { "name": "Bright Cyan", "hex": "#06B6D4" },
-        { "name": "Solar Amber", "hex": "#F59E0B" },
-        { "name": "Charcoal Slate", "hex": "#1E293B" },
-        { "name": "Pure Frost", "hex": "#F8FAFC" }
+        {
+          "name": "Electric Indigo",
+          "hex": "#4F46E5"
+        },
+        {
+          "name": "Bright Cyan",
+          "hex": "#06B6D4"
+        },
+        {
+          "name": "Solar Amber",
+          "hex": "#F59E0B"
+        },
+        {
+          "name": "Charcoal Slate",
+          "hex": "#1E293B"
+        },
+        {
+          "name": "Pure Frost",
+          "hex": "#F8FAFC"
+        }
       ],
       "venues": [
         {
@@ -448,10 +1343,23 @@
       },
       "catering": {
         "style": "Continuous festival refreshment stations, sponsored caffeine bar, and evening dinner buffet.",
-        "appetizers": ["Street Taco Trio", "Mini Vegetable Samosas with Mint Chutney", "Falafel & Hummus Pita Pockets"],
-        "mains": ["Gourmet Burger Bar with vegan patties", "Thai Basil Fried Rice & Teriyaki Bowls"],
-        "desserts": ["Churro Station with warm chocolate dip", "Ice Cream Cookie Sandwich Bar"],
-        "signatureDrinks": ["The 'Code Runner' (Matcha Iced Latte with Vanilla Foam)", "The 'Debug Spritz' (Sparkling Blood Orange & Rosemary)"],
+        "appetizers": [
+          "Street Taco Trio",
+          "Mini Vegetable Samosas with Mint Chutney",
+          "Falafel & Hummus Pita Pockets"
+        ],
+        "mains": [
+          "Gourmet Burger Bar with vegan patties",
+          "Thai Basil Fried Rice & Teriyaki Bowls"
+        ],
+        "desserts": [
+          "Churro Station with warm chocolate dip",
+          "Ice Cream Cookie Sandwich Bar"
+        ],
+        "signatureDrinks": [
+          "The 'Code Runner' (Matcha Iced Latte with Vanilla Foam)",
+          "The 'Debug Spritz' (Sparkling Blood Orange & Rosemary)"
+        ],
         "perGuestEstimate": 14
       },
       "entertainment": {
@@ -462,7 +1370,12 @@
           "Drone Formation Light Display over the campus lake",
           "Inter-collegiate Battle of the Bands"
         ],
-        "keyMoments": ["Opening Ceremony: 09:30 AM", "Hackathon Pitches: 02:00 PM", "Drone Show: 07:30 PM", "Headline Band: 08:30 PM"]
+        "keyMoments": [
+          "Opening Ceremony: 09:30 AM",
+          "Hackathon Pitches: 02:00 PM",
+          "Drone Show: 07:30 PM",
+          "Headline Band: 08:30 PM"
+        ]
       }
     },
     "budget": {
@@ -474,8 +1387,22 @@
           "percentage": 10,
           "estimatedAmount": 1500,
           "items": [
-            { "id": "b-41", "name": "Campus Security & First Aid Personnel", "estimated": 800, "actual": 750, "paid": true, "notes": "6 officers on duty across 12 hrs" },
-            { "id": "b-42", "name": "Facilities Crew Overnight Cleanup & Waste Mgmt", "estimated": 700, "actual": 700, "paid": false, "notes": "Recycling and trash sorting" }
+            {
+              "id": "b-41",
+              "name": "Campus Security & First Aid Personnel",
+              "estimated": 800,
+              "actual": 750,
+              "paid": true,
+              "notes": "6 officers on duty across 12 hrs"
+            },
+            {
+              "id": "b-42",
+              "name": "Facilities Crew Overnight Cleanup & Waste Mgmt",
+              "estimated": 700,
+              "actual": 700,
+              "paid": false,
+              "notes": "Recycling and trash sorting"
+            }
           ]
         },
         {
@@ -485,8 +1412,22 @@
           "percentage": 35,
           "estimatedAmount": 5250,
           "items": [
-            { "id": "b-43", "name": "Lunch & Dinner Meal Vouchers (500 students)", "estimated": 4000, "actual": 4100, "paid": false, "notes": "Subsidized meal coupons redeemed at quad food trucks" },
-            { "id": "b-44", "name": "Hackathon 24-hr Cold Brew & Energy Bar", "estimated": 1250, "actual": 1200, "paid": true, "notes": "Sponsored partly by local roaster" }
+            {
+              "id": "b-43",
+              "name": "Lunch & Dinner Meal Vouchers (500 students)",
+              "estimated": 4000,
+              "actual": 4100,
+              "paid": false,
+              "notes": "Subsidized meal coupons redeemed at quad food trucks"
+            },
+            {
+              "id": "b-44",
+              "name": "Hackathon 24-hr Cold Brew & Energy Bar",
+              "estimated": 1250,
+              "actual": 1200,
+              "paid": true,
+              "notes": "Sponsored partly by local roaster"
+            }
           ]
         },
         {
@@ -496,9 +1437,30 @@
           "percentage": 32,
           "estimatedAmount": 4800,
           "items": [
-            { "id": "b-45", "name": "Concert Line-Array Sound & Lighting Rig", "estimated": 2500, "actual": 2500, "paid": true, "notes": "Full trussing, stage monitors, and sound engineer" },
-            { "id": "b-46", "name": "Headline Guest Musical Artist Performance Fee", "estimated": 1500, "actual": 1500, "paid": false, "notes": "Contract signed, hotel provided" },
-            { "id": "b-47", "name": "Synchronized Quad Drone Light Show (15 mins)", "estimated": 800, "actual": 800, "paid": false, "notes": "FAA cleared campus airspace" }
+            {
+              "id": "b-45",
+              "name": "Concert Line-Array Sound & Lighting Rig",
+              "estimated": 2500,
+              "actual": 2500,
+              "paid": true,
+              "notes": "Full trussing, stage monitors, and sound engineer"
+            },
+            {
+              "id": "b-46",
+              "name": "Headline Guest Musical Artist Performance Fee",
+              "estimated": 1500,
+              "actual": 1500,
+              "paid": false,
+              "notes": "Contract signed, hotel provided"
+            },
+            {
+              "id": "b-47",
+              "name": "Synchronized Quad Drone Light Show (15 mins)",
+              "estimated": 800,
+              "actual": 800,
+              "paid": false,
+              "notes": "FAA cleared campus airspace"
+            }
           ]
         },
         {
@@ -508,8 +1470,22 @@
           "percentage": 13,
           "estimatedAmount": 1950,
           "items": [
-            { "id": "b-48", "name": "Stage Backdrop Banner & Quad Directional Signs", "estimated": 750, "actual": 720, "paid": true, "notes": "Eco-friendly recyclable cardboard & vinyl" },
-            { "id": "b-49", "name": "Attendee NFC Smart Lanyards & Swag Bags", "estimated": 1200, "actual": 1150, "paid": true, "notes": "500 customized lanyard kits" }
+            {
+              "id": "b-48",
+              "name": "Stage Backdrop Banner & Quad Directional Signs",
+              "estimated": 750,
+              "actual": 720,
+              "paid": true,
+              "notes": "Eco-friendly recyclable cardboard & vinyl"
+            },
+            {
+              "id": "b-49",
+              "name": "Attendee NFC Smart Lanyards & Swag Bags",
+              "estimated": 1200,
+              "actual": 1150,
+              "paid": true,
+              "notes": "500 customized lanyard kits"
+            }
           ]
         },
         {
@@ -519,29 +1495,137 @@
           "percentage": 10,
           "estimatedAmount": 1500,
           "items": [
-            { "id": "b-50", "name": "Hackathon Cash Prizes & Laser-Cut Trophies", "estimated": 1000, "actual": 1000, "paid": true, "notes": "Disbursed to top 3 winning projects" },
-            { "id": "b-51", "name": "Event Contingency & Weather Rain Tents", "estimated": 500, "actual": 200, "paid": false, "notes": "Reserve funds" }
+            {
+              "id": "b-50",
+              "name": "Hackathon Cash Prizes & Laser-Cut Trophies",
+              "estimated": 1000,
+              "actual": 1000,
+              "paid": true,
+              "notes": "Disbursed to top 3 winning projects"
+            },
+            {
+              "id": "b-51",
+              "name": "Event Contingency & Weather Rain Tents",
+              "estimated": 500,
+              "actual": 200,
+              "paid": false,
+              "notes": "Reserve funds"
+            }
           ]
         }
       ]
     },
     "checklist": [
-      { "id": "chk-41", "title": "Submit quad sound amplification and event permit to Dean", "milestone": "2-3 Months Out", "deadline": "2026-09-10", "priority": "high", "completed": true, "notes": "Dean of Student Affairs approved" },
-      { "id": "chk-42", "title": "Confirm industry keynote speaker travel itinerary", "milestone": "1 Month Out", "deadline": "2026-10-15", "priority": "high", "completed": true, "notes": "Flight and guest hotel confirmed" },
-      { "id": "chk-43", "title": "Finalize 24-hr Hackathon problem statements and judges", "milestone": "1 Month Out", "deadline": "2026-10-25", "priority": "high", "completed": true, "notes": "4 corporate sponsors providing mentors" },
-      { "id": "chk-44", "title": "Inspect quad electrical load and test backup generators", "milestone": "1 Week Out", "deadline": "2026-11-15", "priority": "high", "completed": false, "notes": "Facilities electrician walkthrough at 2 PM" },
-      { "id": "chk-45", "title": "Stage soundcheck and band rehearsal schedule", "milestone": "Event Day", "deadline": "2026-11-20", "priority": "medium", "completed": false, "notes": "Soundcheck runs 11 AM - 1 PM" }
+      {
+        "id": "chk-41",
+        "title": "Submit quad sound amplification and event permit to Dean",
+        "milestone": "2-3 Months Out",
+        "deadline": "2026-09-10",
+        "priority": "high",
+        "completed": true,
+        "notes": "Dean of Student Affairs approved"
+      },
+      {
+        "id": "chk-42",
+        "title": "Confirm industry keynote speaker travel itinerary",
+        "milestone": "1 Month Out",
+        "deadline": "2026-10-15",
+        "priority": "high",
+        "completed": true,
+        "notes": "Flight and guest hotel confirmed"
+      },
+      {
+        "id": "chk-43",
+        "title": "Finalize 24-hr Hackathon problem statements and judges",
+        "milestone": "1 Month Out",
+        "deadline": "2026-10-25",
+        "priority": "high",
+        "completed": true,
+        "notes": "4 corporate sponsors providing mentors"
+      },
+      {
+        "id": "chk-44",
+        "title": "Inspect quad electrical load and test backup generators",
+        "milestone": "1 Week Out",
+        "deadline": "2026-11-15",
+        "priority": "high",
+        "completed": false,
+        "notes": "Facilities electrician walkthrough at 2 PM"
+      },
+      {
+        "id": "chk-45",
+        "title": "Stage soundcheck and band rehearsal schedule",
+        "milestone": "Event Day",
+        "deadline": "2026-11-20",
+        "priority": "medium",
+        "completed": false,
+        "notes": "Soundcheck runs 11 AM - 1 PM"
+      }
     ],
     "schedule": [
-      { "time": "08:00 AM", "title": "Registration & Swag Distribution", "description": "Check-in at Quad welcome tent. NFC wristbands assigned.", "category": "Registration", "icon": "users" },
-      { "time": "09:30 AM", "title": "Inaugural Ceremony & AI Keynote", "description": "Welcome address by University President and Keynote Speaker.", "category": "Keynote", "icon": "sparkles" },
-      { "time": "11:30 AM", "title": "Hackathon Kickoff & Innovation Expo Open", "description": "50 student project booths open to public voting.", "category": "Expo", "icon": "star" },
-      { "time": "01:00 PM", "title": "Quad Food Truck Plaza Opens", "description": "Live acoustic performances while attendees enjoy lunch.", "category": "Lunch", "icon": "utensils" },
-      { "time": "03:30 PM", "title": "Inter-Collegiate Esports Tournament", "description": "Auditorium main screen broadcast with live student casting.", "category": "Gaming", "icon": "music" },
-      { "time": "06:00 PM", "title": "Hackathon Finalist Pitches & Awards", "description": "Top 5 teams present to corporate venture judges.", "category": "Awards", "icon": "gift" },
-      { "time": "07:30 PM", "title": "Spectacular Drone Light Show", "description": "100 drones illuminate the campus quad in 3D animated formations.", "category": "Show", "icon": "sparkles" },
-      { "time": "08:15 PM", "title": "Headline Band Concert & Cultural Gala", "description": "High-octane musical performance and festival finale.", "category": "Concert", "icon": "music" },
-      { "time": "11:00 PM", "title": "Closing Remarks & Quad Cleanup", "description": "Eco-volunteers initiate campus restoration.", "category": "Wrap-up", "icon": "clock" }
+      {
+        "time": "08:00 AM",
+        "title": "Registration & Swag Distribution",
+        "description": "Check-in at Quad welcome tent. NFC wristbands assigned.",
+        "category": "Registration",
+        "icon": "users"
+      },
+      {
+        "time": "09:30 AM",
+        "title": "Inaugural Ceremony & AI Keynote",
+        "description": "Welcome address by University President and Keynote Speaker.",
+        "category": "Keynote",
+        "icon": "sparkles"
+      },
+      {
+        "time": "11:30 AM",
+        "title": "Hackathon Kickoff & Innovation Expo Open",
+        "description": "50 student project booths open to public voting.",
+        "category": "Expo",
+        "icon": "star"
+      },
+      {
+        "time": "01:00 PM",
+        "title": "Quad Food Truck Plaza Opens",
+        "description": "Live acoustic performances while attendees enjoy lunch.",
+        "category": "Lunch",
+        "icon": "utensils"
+      },
+      {
+        "time": "03:30 PM",
+        "title": "Inter-Collegiate Esports Tournament",
+        "description": "Auditorium main screen broadcast with live student casting.",
+        "category": "Gaming",
+        "icon": "music"
+      },
+      {
+        "time": "06:00 PM",
+        "title": "Hackathon Finalist Pitches & Awards",
+        "description": "Top 5 teams present to corporate venture judges.",
+        "category": "Awards",
+        "icon": "gift"
+      },
+      {
+        "time": "07:30 PM",
+        "title": "Spectacular Drone Light Show",
+        "description": "100 drones illuminate the campus quad in 3D animated formations.",
+        "category": "Show",
+        "icon": "sparkles"
+      },
+      {
+        "time": "08:15 PM",
+        "title": "Headline Band Concert & Cultural Gala",
+        "description": "High-octane musical performance and festival finale.",
+        "category": "Concert",
+        "icon": "music"
+      },
+      {
+        "time": "11:00 PM",
+        "title": "Closing Remarks & Quad Cleanup",
+        "description": "Eco-volunteers initiate campus restoration.",
+        "category": "Wrap-up",
+        "icon": "clock"
+      }
     ],
     "vendors": [
       {

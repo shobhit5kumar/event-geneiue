@@ -681,3 +681,7 @@ const QUICK_PROMPTS = [
   { label: "🌧️ Weather Contingency", prompt: "How should we structure our Plan B weather contingency timeline and vendor communication?" },
   { label: "⏱️ Schedule Review", prompt: "Analyze our event-day schedule. Are there any bottlenecks or rushed transitions we should adjust?" }
 ];
+
+window.DEFAULT_EVENTS = DEFAULT_EVENTS;
+window.VENDOR_ADVISORY_GUIDE = VENDOR_ADVISORY_GUIDE;
+window.QUICK_PROMPTS = QUICK_PROMPTS;

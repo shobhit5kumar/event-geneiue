@@ -1228,4 +1228,6 @@ class EventGenieApp {
 let app;
 window.addEventListener('DOMContentLoaded', () => {
   app = new EventGenieApp();
+  window.app = app;
 });
+window.EventGenieApp = EventGenieApp;
