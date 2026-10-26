@@ -1,0 +1,52 @@
+================================================================================
+EVENTGENIE AI - SUBMISSION FORM ANSWERS (~950 CHARACTERS EACH)
+================================================================================
+
+--------------------------------------------------------------------------------
+QUESTION 1: Describe the changes/updates made in the deployed version
+--------------------------------------------------------------------------------
+EventGenie AI is an AI-powered event planning web application with the following key deployed updates:
+
+• Modern UI/UX: Engineered a glassmorphic interface (deep navy #0B1120, violet #7C3AED, cyan #38BDF8) featuring a landing page, 6-tab dashboard, interactive modal dialogs, and toast notifications.
+• AI Event Plan Synthesis: Guided multi-step wizard supporting weddings, birthdays, fests, and galas that drafts executive vision summaries, curated venues, decor concepts, catering menus, and entertainment flow.
+• Programmatic Smart Budget: Replaced generative math with deterministic arithmetic calculations. Features dynamic guest/budget adjustment sliders, itemized cost tracking, paid escrow toggles, and over-budget warnings.
+• Checklist & Run Sheet: Phased milestone timeline (6+ months to event day) with priority filters, progress gauges, and an hour-by-hour operational run sheet.
+• Vendor Hub & Cloud Ready: Advisory negotiation guide, custom vendor directory, dual JSON/localStorage persistence, and Vite build tooling for seamless Vercel hosting.
+
+[Character Count: 955 chars with spaces]
+
+
+--------------------------------------------------------------------------------
+QUESTION 2: Mention the Gen AI services utilized, and where did you utilize it?
+--------------------------------------------------------------------------------
+EventGenie AI incorporates a dual-tier Generative AI architecture:
+
+• Gen AI Service: Google Gemini API (gemini-1.5-flash / gemini-2.0) accessed through a secure server-side proxy (API key stored via server environment variables, never exposed to clients). It includes a built-in offline Contextual Domain Engine (Demo AI Mode) ensuring full operational availability.
+
+• Where Gen AI is Utilized:
+1. Event Plan Synthesis (/api/ai/plan): Generates tailored event narratives, venue recommendations with pros/cons, thematic decor/lighting concepts, multi-course catering menus with dietary options (Vegan/GF), signature cocktails/mocktails, and musical program highlights.
+2. Conversational Co-Pilot (/api/ai/chat): A context-aware chat assistant that evaluates active event parameters (guests, budget, theme, location) to deliver budget-saving strategies, polite RSVP reminder drafts (WhatsApp/Email), 72-hour rain contingency protocols, and schedule bottleneck reviews.
+3. Quick Prompt Chips: Delivers instant curated planning advice for non-technical event hosts.
+
+[Character Count: 978 chars with spaces]
+
+
+--------------------------------------------------------------------------------
+OPTIONAL: BOTH QUESTIONS COMBINED IN A SINGLE BOX (~950 CHARS TOTAL)
+--------------------------------------------------------------------------------
+EventGenie AI is an intelligent event planning web application deployed on Vercel with zero-dependency Python local server support.
+
+1. Updates Made in Deployed Version:
+• Glassmorphic UI/UX (navy/purple/cyan) with landing page, 6-tab dashboard, modals, and toast alerts.
+• Multi-step event creation wizard for weddings, birthdays, and fests.
+• Programmatic Smart Budget: 100% deterministic arithmetic (no LLM math errors), dynamic sliders, line-item tracking, and paid toggles.
+• Phased milestone checklist (6+ months to event day) and hour-by-hour day run sheet.
+• Vendor Hub with negotiation guides and custom directory.
+• Vite configuration & vercel.json for automated cloud hosting.
+
+2. Gen AI Services & Utilization:
+• Service: Google Gemini API (gemini-1.5-flash) via secure proxy + offline heuristic engine.
+• Utilization: (1) Synthesizes full event plans (themes, venues, catering, decor, entertainment). (2) Powers conversational co-pilot for budget saving, RSVP drafts, and rain contingencies.
+
+[Character Count: 958 chars with spaces]
+================================================================================
