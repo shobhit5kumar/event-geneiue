@@ -1,0 +1,19 @@
+{
+  "name": "eventgenie-ai",
+  "version": "1.0.0",
+  "description": "EventGenie AI - Intelligent Event Planning, Smart Budget & Timelines",
+  "main": "server.py",
+  "scripts": {
+    "start": "python server.py",
+    "dev": "python server.py",
+    "serve": "python server.py"
+  },
+  "keywords": [
+    "event-planner",
+    "ai-assistant",
+    "budget-calculator",
+    "gemini-ai"
+  ],
+  "author": "shobhit5kumar",
+  "license": "MIT"
+}
