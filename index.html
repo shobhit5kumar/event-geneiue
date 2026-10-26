@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EventGenie AI - AI-powered event planning co-pilot for weddings, birthdays, college festivals, and galas with smart programmatic budget calculations, milestone checklists, and advisory vendor guides.">
+  <title>EventGenie AI - Intelligent Event Planning & Smart Budget Assistant</title>
+  
+  <!-- Modern Font & Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧞</text></svg>">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <div class="nav-brand" style="cursor: pointer;" onclick="app.switchView('landing')">
+        <div class="brand-icon">🧞</div>
+        <span>EventGenie <span class="brand-tag">AI</span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#features" onclick="app.switchView('landing')">Features</a></li>
+        <li><a href="#showcase" onclick="app.switchView('landing')">Sample Events</a></li>
+        <li><a href="javascript:void(0)" onclick="app.switchView('app'); app.switchTab('overview')">Planner Workspace</a></li>
+        <li><a href="javascript:void(0)" onclick="app.switchView('app'); app.switchTab('budget')">Smart Budget</a></li>
+        <li><a href="javascript:void(0)" onclick="app.switchView('app'); app.switchTab('checklist')">Checklist & Schedule</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- AI Mode Status Pill -->
+        <div id="ai-mode-badge" class="badge badge-purple" title="Click to configure Gemini API Key" onclick="app.openApiKeyModal()" style="cursor: pointer;">
+          <span class="pulse-dot"></span> Demo AI Mode
+        </div>
+
+        <button class="btn btn-secondary btn-sm" onclick="app.openApiKeyModal()" title="Settings & API Key">
+          ⚙️ Settings
+        </button>
+
+        <button class="btn btn-primary btn-sm" id="nav-btn-create-event" onclick="app.openModal('new-event-modal')">
+          ✨ New Event Plan
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       LANDING PAGE VIEW
+       ======================================================== -->
+  <main id="landing-view">
+    <!-- Hero Section -->
+    <section class="hero-section container">
+      <div class="hero-pill">
+        <span>✨ Next-Generation AI Event Intelligence</span>
+      </div>
+      <h1 class="hero-title">
+        Turn Any Event Dream Into an <span class="text-gradient">Actionable Masterpiece</span>
+      </h1>
+      <p class="hero-subtitle">
+        Intelligent event synthesis meets deterministic financial engineering. Curate bespoke themes, compute reliable budgets, coordinate milestone timelines, and consult your real-time AI co-pilot.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary" style="padding: 0.85rem 2rem; font-size: 1.05rem;" onclick="app.switchView('app')">
+          🚀 Open Event Workspace
+        </button>
+        <button class="btn btn-secondary" style="padding: 0.85rem 1.75rem;" onclick="app.openModal('new-event-modal')">
+          ✨ Generate New AI Plan
+        </button>
+      </div>
+
+      <!-- Live Metric Counters -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Programmatic Math Accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5-in-1</div>
+          <div class="stat-label">Plan, Budget, Checklist, Vendors, AI</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Instant</div>
+          <div class="stat-label">Zero-Latency Demo Experience</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Grid -->
+    <section class="features-section container" id="features">
+      <div class="section-header">
+        <div class="section-tag">Engineered for Perfection</div>
+        <h2>Everything You Need for Unforgettable Gatherings</h2>
+        <p>From intimate 21st birthdays to 500-attendee college galas and luxury botanical weddings.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">🧠</div>
+          <h3>AI Event Plan Synthesis</h3>
+          <p>Personalized executive summaries, curated venue concepts with pros/cons, decor blueprints, catering menus, and musical highlights tailored to your guest count.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">💰</div>
+          <h3>Smart Budget Planner</h3>
+          <p>Deterministic calculations that never hallucinate arithmetic sums. Category allocations, real-time recalculations with sliders, and itemized actual vs. estimated cost tracking.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">📋</div>
+          <h3>Milestone Checklist & Run Sheet</h3>
+          <p>Phased preparation milestones (6+ months out to event day), priority tagging, completion progress gauges, and an hour-by-hour master event-day schedule.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">🏢</div>
+          <h3>Advisory Vendor Directory</h3>
+          <p>Comprehensive vendor category guides with "Must-Ask Questions", red flag detection, and a personal directory to save your confirmed contacts and quotes.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">🧞</div>
+          <h3>Conversational AI Co-Pilot</h3>
+          <p>Ask for budget-saving strategies, emergency weather contingencies, signature cocktails, or polite RSVP reminders. Works seamlessly with Gemini AI or offline Demo mode.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">📄</div>
+          <h3>Dossier Export & Print</h3>
+          <p>Generate clean, printer-friendly event dossiers or download JSON backups with a single click to share with co-hosts, vendors, and clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-loaded Sample Events Showcase -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Instant Testing & Exploration</div>
+          <h2>Explore Pre-Configured Showcase Events</h2>
+          <p>Explore complete, fully populated event plans ready for testing right out of the box.</p>
+        </div>
+
+        <div class="sample-cards-grid">
+          <!-- Sample 1 -->
+          <div class="glass-card sample-event-card">
+            <div>
+              <div class="sample-event-header">
+                <span class="badge badge-purple">Wedding</span>
+                <span class="badge badge-emerald">Ready</span>
+              </div>
+              <h3>Royal Botanical Garden Wedding</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
+                Host: Elena & Julian Vance • Savannah, GA
+              </p>
+              <div class="sample-badges">
+                <span class="badge badge-cyan">200 Guests</span>
+                <span class="badge badge-purple">$35,000 Budget</span>
+                <span class="badge badge-amber">Botanical Romance</span>
+              </div>
+              <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+                Glass conservatory setting, twilight candlelit floral arches, harp & cello prelude, and 3-course plated culinary experience.
+              </p>
+            </div>
+            <div>
+              <div class="sample-stats-row">
+                <span>Committed: <strong>$35,000</strong></span>
+                <span>Checklist: <strong>9 Tasks</strong></span>
+                <span>Run Sheet: <strong>11 Segments</strong></span>
+              </div>
+              <button class="btn btn-primary" style="width: 100%;" onclick="app.selectEvent('event-1'); app.switchView('app')">
+                View Wedding Plan →
+              </button>
+            </div>
+          </div>
+
+          <!-- Sample 2 -->
+          <div class="glass-card sample-event-card">
+            <div>
+              <div class="sample-event-header">
+                <span class="badge badge-cyan">Birthday</span>
+                <span class="badge badge-emerald">Ready</span>
+              </div>
+              <h3>Cyberpunk Neon 21st Birthday</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
+                Host: Liam 'Kairo' Chen • Austin, TX
+              </p>
+              <div class="sample-badges">
+                <span class="badge badge-cyan">80 Guests</span>
+                <span class="badge badge-purple">$6,500 Budget</span>
+                <span class="badge badge-amber">Neon Synthwave</span>
+              </div>
+              <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+                Industrial loft blackout, UV body paint booth, retro arcade pods, food truck night market bites, and headline DJ.
+              </p>
+            </div>
+            <div>
+              <div class="sample-stats-row">
+                <span>Committed: <strong>$6,500</strong></span>
+                <span>Checklist: <strong>5 Tasks</strong></span>
+                <span>Run Sheet: <strong>7 Segments</strong></span>
+              </div>
+              <button class="btn btn-primary" style="width: 100%;" onclick="app.selectEvent('event-2'); app.switchView('app')">
+                View Birthday Plan →
+              </button>
+            </div>
+          </div>
+
+          <!-- Sample 3 -->
+          <div class="glass-card sample-event-card">
+            <div>
+              <div class="sample-event-header">
+                <span class="badge badge-amber">College Fest</span>
+                <span class="badge badge-emerald">Ready</span>
+              </div>
+              <h3>TechNova 2026: College Tech Fest</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
+                Host: Engineering Council & Dean • Campus Quad
+              </p>
+              <div class="sample-badges">
+                <span class="badge badge-cyan">500 Guests</span>
+                <span class="badge badge-purple">$15,000 Budget</span>
+                <span class="badge badge-amber">Innovate & Ignite</span>
+              </div>
+              <p style="font-size: 0.875rem; margin-bottom: 1rem;">
+                24-hour hackathon showcase, keynote AI tech leaders, synchronized 100-drone night light show, and rock band festival.
+              </p>
+            </div>
+            <div>
+              <div class="sample-stats-row">
+                <span>Committed: <strong>$15,000</strong></span>
+                <span>Checklist: <strong>5 Tasks</strong></span>
+                <span>Run Sheet: <strong>9 Segments</strong></span>
+              </div>
+              <button class="btn btn-primary" style="width: 100%;" onclick="app.selectEvent('event-3'); app.switchView('app')">
+                View College Fest Plan →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       APPLICATION DASHBOARD / WORKSPACE VIEW
+       ======================================================== -->
+  <div id="app-view" class="app-view hidden">
+    <!-- App Header & Quick Stats -->
+    <header class="app-header">
+      <div class="container app-control-bar">
+        <!-- Event Switcher -->
+        <div class="event-selector-wrap">
+          <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Active Event:</label>
+          <select id="event-select-dropdown" class="event-dropdown" title="Select or switch current event plan"></select>
+          <button class="btn btn-primary btn-sm" onclick="app.openModal('new-event-modal')">
+            + New Event
+          </button>
+        </div>
+
+        <!-- Metric Badges -->
+        <div class="app-quick-stats">
+          <div class="quick-stat-item">
+            <span>📅 Countdown:</span>
+            <strong id="stat-days-until">--</strong>
+          </div>
+          <div class="quick-stat-item">
+            <span>💰 Budget:</span>
+            <strong id="stat-budget-total">--</strong>
+          </div>
+          <div class="quick-stat-item">
+            <span>👥 Scale:</span>
+            <strong id="stat-guest-count">--</strong>
+          </div>
+          <div class="quick-stat-item">
+            <span>📋 Tasks:</span>
+            <strong id="stat-tasks-progress">--</strong>
+          </div>
+        </div>
+
+        <!-- Manage Actions -->
+        <div class="flex items-center gap-2">
+          <button class="btn btn-secondary btn-sm" onclick="app.switchTab('export')" title="Print or Export Dossier">
+            📄 Export
+          </button>
+          <button class="btn btn-danger btn-sm" onclick="app.deleteCurrentEvent()" title="Delete Current Event">
+            🗑️ Delete
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="app.resetToSampleEvents()" title="Reset to default demo data">
+            ↺ Reset
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Workspace Main Container -->
+    <div class="container" style="flex: 1; padding-top: 1.5rem; padding-bottom: 3rem;">
+      <!-- Tab Navigation -->
+      <nav class="app-tabs-nav" id="workspace-tabs-nav">
+        <button class="tab-btn active" data-tab="overview">
+          🌟 AI Master Plan
+        </button>
+        <button class="tab-btn" data-tab="budget">
+          💰 Smart Budget Planner
+        </button>
+        <button class="tab-btn" data-tab="checklist">
+          📋 Checklist & Run Sheet
+        </button>
+        <button class="tab-btn" data-tab="vendors">
+          🏢 Vendor Hub
+        </button>
+        <button class="tab-btn" data-tab="chat">
+          💬 EventGenie Assistant
+        </button>
+        <button class="tab-btn" data-tab="export">
+          📄 Export & Dossier
+        </button>
+      </nav>
+
+      <!-- ====================================================
+           TAB 1: OVERVIEW & AI MASTER PLAN
+           ==================================================== -->
+      <section class="tab-content-panel active" id="tab-panel-overview">
+        <!-- Hero Plan Banner -->
+        <div class="plan-hero-banner">
+          <div class="flex items-center justify-between" style="margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.75rem;">
+            <span class="badge badge-purple" id="plan-theme-badge">Theme: Modern Celebration</span>
+            <span class="badge badge-cyan" id="plan-type-badge">Curated AI Plan</span>
+          </div>
+          <h2 id="plan-event-title" style="margin-bottom: 0.35rem; font-size: 2rem;">Event Title</h2>
+          <p id="plan-event-subtitle" style="color: var(--accent-cyan); font-weight: 500; margin-bottom: 1.25rem;">
+            Host • Location • Date
+          </p>
+          <p id="plan-executive-summary" style="font-size: 1.05rem; line-height: 1.7; color: #e2e8f0; max-width: 950px;">
+            Executive summary...
+          </p>
+
+          <!-- Color Palette -->
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size: 0.825rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">
+              Visual Color Harmony Palette:
+            </div>
+            <div class="palette-swatches" id="plan-color-palette"></div>
+          </div>
+        </div>
+
+        <!-- Plan Modules Grid -->
+        <div class="plan-modules-grid">
+          <!-- Venues -->
+          <div class="glass-card">
+            <div class="flex items-center gap-2" style="margin-bottom: 1rem;">
+              <span style="font-size: 1.35rem;">🏛️</span>
+              <h3>Curated Venue Concepts</h3>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Capacity-matched spaces with operational pros and curfew constraints.
+            </p>
+            <div id="plan-venues-list"></div>
+          </div>
+
+          <!-- Decor & Ambience -->
+          <div class="glass-card">
+            <div class="flex items-center gap-2" style="margin-bottom: 1rem;">
+              <span style="font-size: 1.35rem;">✨</span>
+              <h3>Decor, Ambience & Lighting</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.875rem;">
+              <div>
+                <strong style="color: #c4b5fd;">Design Concept:</strong>
+                <p id="plan-decor-concept" style="margin-top: 0.2rem;"></p>
+              </div>
+              <div>
+                <strong style="color: #c4b5fd;">Grand Entrance:</strong>
+                <p id="plan-decor-entrance" style="margin-top: 0.2rem;"></p>
+              </div>
+              <div>
+                <strong style="color: #c4b5fd;">Table Styling:</strong>
+                <p id="plan-decor-tables" style="margin-top: 0.2rem;"></p>
+              </div>
+              <div>
+                <strong style="color: #c4b5fd;">Atmospheric Lighting:</strong>
+                <p id="plan-decor-lighting" style="margin-top: 0.2rem;"></p>
+              </div>
+              <div>
+                <strong style="color: #c4b5fd;">Photo Installation:</strong>
+                <p id="plan-decor-photobooth" style="margin-top: 0.2rem;"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Catering Strategy -->
+          <div class="glass-card">
+            <div class="flex items-center justify-between" style="margin-bottom: 1rem;">
+              <div class="flex items-center gap-2">
+                <span style="font-size: 1.35rem;">🍽️</span>
+                <h3>Catering & Beverage Strategy</h3>
+              </div>
+              <span class="badge badge-emerald" id="plan-catering-perguest">~$55/guest</span>
+            </div>
+            <p id="plan-catering-style" style="font-size: 0.875rem; color: #38bdf8; margin-bottom: 1rem;"></p>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.85rem;">
+              <div>
+                <strong style="color: #fcd34d;">Appetizers & Canapés:</strong>
+                <ul id="plan-catering-apps" style="margin-left: 1.25rem; margin-top: 0.25rem;"></ul>
+              </div>
+              <div>
+                <strong style="color: #fcd34d;">Main Entrées:</strong>
+                <ul id="plan-catering-mains" style="margin-left: 1.25rem; margin-top: 0.25rem;"></ul>
+              </div>
+              <div>
+                <strong style="color: #fcd34d;">Celebration Desserts:</strong>
+                <ul id="plan-catering-desserts" style="margin-left: 1.25rem; margin-top: 0.25rem;"></ul>
+              </div>
+              <div>
+                <strong style="color: #fcd34d;">Signature Drinks:</strong>
+                <ul id="plan-catering-drinks" style="margin-left: 1.25rem; margin-top: 0.25rem;"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entertainment & Flow -->
+          <div class="glass-card">
+            <div class="flex items-center gap-2" style="margin-bottom: 1rem;">
+              <span style="font-size: 1.35rem;">🎵</span>
+              <h3>Entertainment, Sound & Flow</h3>
+            </div>
+            <div style="font-size: 0.875rem; margin-bottom: 1rem;">
+              <strong style="color: #38bdf8;">Music Style:</strong>
+              <p id="plan-ent-genre" style="margin-top: 0.25rem;"></p>
+            </div>
+            <div>
+              <strong style="color: #38bdf8; font-size: 0.875rem;">Program Highlights & Crowd Moments:</strong>
+              <ul id="plan-ent-highlights" style="margin-left: 1.25rem; margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.6;"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           TAB 2: SMART BUDGET PLANNER (PROGRAMMATIC ARITHMETIC)
+           ==================================================== -->
+      <section class="tab-content-panel" id="tab-panel-budget">
+        <div class="budget-overview-card">
+          <div class="flex items-center justify-between" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h2>Smart Financial Blueprint</h2>
+              <p>Strict programmatic arithmetic engine. Balances recalculate accurately in real time.</p>
+            </div>
+            <span class="badge badge-purple" style="font-size: 0.85rem;">
+              Programmatic Verification Active
+            </span>
+          </div>
+
+          <!-- 4 Big Metric Stat Boxes -->
+          <div class="budget-stats-grid">
+            <div class="budget-stat-box">
+              <span class="stat-label">Target Total Budget</span>
+              <div class="stat-number" id="budget-target-display">$0</div>
+            </div>
+            <div class="budget-stat-box">
+              <span class="stat-label">Committed Expenses</span>
+              <div class="stat-number" id="budget-actual-display">$0</div>
+            </div>
+            <div class="budget-stat-box">
+              <span class="stat-label">Already Paid / Escrow</span>
+              <div class="stat-number" id="budget-paid-display" style="color: var(--accent-emerald);">$0</div>
+            </div>
+            <div class="budget-stat-box">
+              <span class="stat-label">Remaining Safe Cushion</span>
+              <div class="stat-number" id="budget-remaining-display">$0</div>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="budget-progress-bar-wrap">
+            <div class="budget-progress-bar-fill" id="budget-progress-fill" style="width: 0%;"></div>
+          </div>
+          <div id="budget-progress-text" style="font-size: 0.85rem; color: var(--text-muted); text-align: right;">
+            0% Committed
+          </div>
+
+          <!-- Live Budget Adjustment Controls -->
+          <div class="budget-adjuster-bar">
+            <div class="flex items-center gap-3">
+              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Adjust Guests:</label>
+              <input type="number" id="adjust-guest-count" style="width: 100px;" min="5" max="5000" />
+            </div>
+            <div class="flex items-center gap-3">
+              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Adjust Budget:</label>
+              <input type="number" id="adjust-target-budget" style="width: 130px;" min="500" step="100" />
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="app.recalculateBudgetSettings(document.getElementById('adjust-target-budget').value, document.getElementById('adjust-guest-count').value)">
+              ⚡ Recalculate Category Baselines
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Line Items Tables -->
+        <div class="budget-categories-list" id="budget-categories-container"></div>
+
+        <!-- Prominent Disclaimer -->
+        <div class="budget-disclaimer-note">
+          <span>ℹ️</span>
+          <div>
+            <strong>Pricing Notice:</strong> All figures and category distributions are mathematical planning estimates based on regional benchmarks, not confirmed vendor contracts. Always verify final quotes with your chosen vendors before signing agreements.
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           TAB 3: CHECKLIST & MASTER RUN SHEET
+           ==================================================== -->
+      <section class="tab-content-panel" id="tab-panel-checklist">
+        <!-- Checklist Section -->
+        <div class="glass-card" style="margin-bottom: 2rem;">
+          <div class="flex items-center justify-between" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h2>Master Event Preparation Checklist</h2>
+              <p>Track tasks, deadlines, and milestone readiness.</p>
+            </div>
+            <button class="btn btn-primary" onclick="app.openAddTaskModal()">
+              + Add Custom Task
+            </button>
+          </div>
+
+          <!-- Filters -->
+          <div class="checklist-controls">
+            <div class="filter-btn-group">
+              <button class="filter-btn active" data-filter="all">All Tasks</button>
+              <button class="filter-btn" data-filter="pending">Pending</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+              <button class="filter-btn" data-filter="high">Critical Priority</button>
+            </div>
+          </div>
+
+          <!-- Task Cards Container -->
+          <div class="checklist-items-container" id="checklist-tasks-container"></div>
+        </div>
+
+        <!-- Event-Day Run Sheet Section -->
+        <div class="glass-card">
+          <div class="flex items-center justify-between" style="margin-bottom: 1.5rem;">
+            <div>
+              <h2>Event-Day Master Schedule Run Sheet</h2>
+              <p>Hour-by-hour operational breakdown from initial vendor load-in to midnight sendoff.</p>
+            </div>
+            <span class="badge badge-cyan">Day-of Itinerary</span>
+          </div>
+
+          <!-- Timeline Track -->
+          <div class="timeline-track" id="timeline-runsheet-container"></div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           TAB 4: VENDOR HUB
+           ==================================================== -->
+      <section class="tab-content-panel" id="tab-panel-vendors">
+        <!-- Header & Tabs -->
+        <div class="flex items-center justify-between" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h2>Vendor Hub & Advisory Directory</h2>
+            <p>Inspection checklists, interview questions, and your private vendor contact book.</p>
+          </div>
+          <button class="btn btn-primary" onclick="app.openAddVendorModal()">
+            + Save Vendor Contact
+          </button>
+        </div>
+
+        <!-- User's Saved Vendors -->
+        <div style="margin-bottom: 2.5rem;">
+          <h3 style="margin-bottom: 1rem; color: #a78bfa;">My Confirmed & Inquired Vendors</h3>
+          <div class="custom-vendor-grid" id="custom-vendors-grid"></div>
+        </div>
+
+        <!-- Advisory Guide Knowledge Base -->
+        <div>
+          <div class="flex items-center justify-between" style="margin-bottom: 1rem;">
+            <h3 style="color: var(--accent-cyan);">Expert Vendor Negotiation & Advisory Guide</h3>
+            <span class="badge badge-purple">Advisory Intelligence</span>
+          </div>
+          <div id="vendor-advisory-guide-container"></div>
+        </div>
+
+        <div class="budget-disclaimer-note">
+          <span>ℹ️</span>
+          <div>
+            <strong>Advisory Notice:</strong> Vendor suggestions and questions represent general planning best practices. EventGenie does not broker vendor bookings or claim vendors are verified partners.
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           TAB 5: AI CHAT ASSISTANT
+           ==================================================== -->
+      <section class="tab-content-panel" id="tab-panel-chat">
+        <div class="chat-workspace">
+          <!-- Sidebar: Quick Prompt Chips -->
+          <div class="chat-sidebar">
+            <div class="flex items-center justify-between">
+              <strong style="font-size: 0.95rem;">Quick Prompts</strong>
+              <span id="chat-ai-status" class="badge badge-purple" style="font-size: 0.7rem;">Demo AI</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">
+              Instant questions tailored to your active event:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;" id="chat-quick-chips"></div>
+
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="app.openApiKeyModal()">
+                🔑 Connect Real Gemini API
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Chat Scroll & Input -->
+          <div class="chat-main-area">
+            <div class="chat-messages-scroll" id="chat-messages-container"></div>
+            <div class="chat-input-bar">
+              <input type="text" id="chat-input-text" placeholder="Ask EventGenie AI about budget, timelines, menu, decor..." autocomplete="off" />
+              <button class="btn btn-primary" onclick="app.sendChatMessage()">
+                Send 🚀
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           TAB 6: EXPORT & PRINT DOSSIER
+           ==================================================== -->
+      <section class="tab-content-panel" id="tab-panel-export">
+        <div class="glass-card" style="margin-bottom: 2rem;">
+          <div class="flex items-center justify-between" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h2>Master Event Dossier</h2>
+              <p>Printable executive briefing package for co-hosts, clients, and vendor partners.</p>
+            </div>
+            <div class="flex gap-2">
+              <button class="btn btn-cyan" onclick="app.printEventDossier()">
+                🖨️ Print / Save as PDF
+              </button>
+              <button class="btn btn-secondary" onclick="app.exportEventJson()">
+                💾 Export JSON Backup
+              </button>
+            </div>
+          </div>
+
+          <!-- Dossier Sheet Preview -->
+          <div style="background: rgba(11, 17, 32, 0.6); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem;">
+            <div class="flex items-center justify-between" style="border-bottom: 2px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+              <div>
+                <h1 id="export-title" style="font-size: 1.8rem; margin-bottom: 0.25rem;">Event Title</h1>
+                <p id="export-meta" style="color: var(--accent-cyan); font-weight: 600;"></p>
+              </div>
+              <div class="badge badge-purple" style="font-size: 0.85rem;">EventGenie AI Dossier</div>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <h3 style="color: #c4b5fd; margin-bottom: 0.5rem;">Executive Vision</h3>
+              <p id="export-summary" style="line-height: 1.6;"></p>
+            </div>
+
+            <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              💡 <em>Tip: Click "Print / Save as PDF" above to generate a clean client-ready paper or PDF document.</em>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 1: CREATE NEW EVENT WIZARD
+       ======================================================== -->
+  <div class="modal-overlay" id="new-event-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="flex items-center gap-2">
+          <span style="font-size: 1.35rem;">✨</span>
+          <h3 style="font-size: 1.25rem;">Create New AI Event Plan</h3>
+        </div>
+        <button class="btn-icon btn-secondary" onclick="app.closeModal('new-event-modal')">✕</button>
+      </div>
+
+      <div class="modal-body" id="new-event-modal-body">
+        <form id="create-event-form" onsubmit="app.handleCreateEventSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Event Type *</label>
+              <select name="eventType" required>
+                <option value="wedding">💍 Wedding</option>
+                <option value="birthday">🎂 Birthday Party</option>
+                <option value="college">🎓 College Fest / Gala</option>
+                <option value="corporate">💼 Corporate Gala</option>
+                <option value="community">🎉 Community Celebration</option>
+                <option value="party">✨ Private Party</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Target Date *</label>
+              <input type="date" name="eventDate" value="2026-11-20" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Event Name / Title *</label>
+            <input type="text" name="eventTitle" placeholder="e.g. Royal Twilight Wedding or Cyber 21st" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Host / Organizer Name</label>
+              <input type="text" name="hostName" placeholder="e.g. Sarah & David or Student Council" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">City / Location *</label>
+              <input type="text" name="eventLocation" placeholder="e.g. Chicago, IL or Downtown Campus" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Estimated Guest Count *</label>
+              <input type="number" name="guestCount" value="120" min="5" max="5000" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Target Total Budget *</label>
+              <div class="flex gap-2">
+                <select name="currency" style="width: 80px;">
+                  <option value="$">$ USD</option>
+                  <option value="₹">₹ INR</option>
+                  <option value="€">€ EUR</option>
+                  <option value="£">£ GBP</option>
+                </select>
+                <input type="number" name="targetBudget" value="15000" min="500" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Theme & Vibe Concept *</label>
+            <input type="text" name="eventTheme" placeholder="e.g. Enchanted Forest, Neon Retro Synth, Minimalist Chic" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Special Constraints, Food Preferences, or Music Vibe</label>
+            <textarea name="specialNotes" rows="2" placeholder="e.g. Needs vegan options, acoustic harp for vows, outdoor tent backup..."></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer" id="new-event-modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeModal('new-event-modal')">Cancel</button>
+        <button class="btn btn-primary" onclick="document.getElementById('create-event-form').requestSubmit()">
+          🧞 Synthesize AI Plan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 2: ADD BUDGET EXPENSE ITEM
+       ======================================================== -->
+  <div class="modal-overlay" id="add-item-modal">
+    <div class="modal-box" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3>Add Expense Line Item</h3>
+        <button class="btn-icon btn-secondary" onclick="app.closeModal('add-item-modal')">✕</button>
+      </div>
+      <form onsubmit="app.handleAddItemSubmit(event)">
+        <div class="modal-body">
+          <input type="hidden" id="modal-add-item-cat-id" />
+          <div class="form-group">
+            <label class="form-label">Item / Service Name *</label>
+            <input type="text" id="item-name-input" placeholder="e.g. Sound Engineer Overtime, Floral Centerpieces" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Estimated Cost *</label>
+              <input type="number" id="item-est-input" placeholder="500" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Actual Quote / Spent</label>
+              <input type="number" id="item-actual-input" placeholder="500" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Notes / Contract Details</label>
+            <input type="text" id="item-notes-input" placeholder="e.g. Paid 50% deposit, balance due on event day" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="app.closeModal('add-item-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 3: ADD CHECKLIST TASK
+       ======================================================== -->
+  <div class="modal-overlay" id="add-task-modal">
+    <div class="modal-box" style="max-width: 540px;">
+      <div class="modal-header">
+        <h3>Add Preparation Task</h3>
+        <button class="btn-icon btn-secondary" onclick="app.closeModal('add-task-modal')">✕</button>
+      </div>
+      <form onsubmit="app.handleAddTaskSubmit(event)">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Task Title *</label>
+            <input type="text" id="task-title-input" placeholder="e.g. Finalize seating chart, submit music playlist" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Milestone Window</label>
+              <select id="task-milestone-input">
+                <option value="6+ Months Out">6+ Months Out</option>
+                <option value="2-3 Months Out">2-3 Months Out</option>
+                <option value="1 Month Out">1 Month Out</option>
+                <option value="1 Week Out">1 Week Out</option>
+                <option value="Event Day">Event Day</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Priority Level</label>
+              <select id="task-priority-input">
+                <option value="high">Critical / High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Target Completion Date</label>
+            <input type="date" id="task-deadline-input" value="2026-11-10" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Task Notes</label>
+            <textarea id="task-notes-input" rows="2" placeholder="e.g. Assigned to maid of honor, need 4 extra printed copies..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="app.closeModal('add-task-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 4: ADD VENDOR CONTACT
+       ======================================================== -->
+  <div class="modal-overlay" id="add-vendor-modal">
+    <div class="modal-box" style="max-width: 580px;">
+      <div class="modal-header">
+        <h3>Save Vendor Contact</h3>
+        <button class="btn-icon btn-secondary" onclick="app.closeModal('add-vendor-modal')">✕</button>
+      </div>
+      <form onsubmit="app.handleAddVendorSubmit(event)">
+        <div class="modal-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Vendor / Company Name *</label>
+              <input type="text" id="vendor-name-input" placeholder="e.g. Apex Sound & Light LLC" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category *</label>
+              <select id="vendor-cat-input">
+                <option value="Venue">Venue</option>
+                <option value="Catering">Catering</option>
+                <option value="Florals & Decor">Florals & Decor</option>
+                <option value="Photography">Photography</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Logistics">Logistics / Misc</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Contact Person</label>
+              <input type="text" id="vendor-contact-input" placeholder="e.g. Sarah Jenkins" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="text" id="vendor-phone-input" placeholder="e.g. +1 (555) 019-2834" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" id="vendor-email-input" placeholder="contact@company.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Status</label>
+              <select id="vendor-status-input">
+                <option value="Researching">Researching</option>
+                <option value="Contacted">Contacted</option>
+                <option value="Quote Received">Quote Received</option>
+                <option value="Deposit Paid">Deposit Paid</option>
+                <option value="Booked" selected>Booked</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Agreed Quote / Rate</label>
+            <input type="number" id="vendor-quote-input" placeholder="2500" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contract Notes & Scope</label>
+            <textarea id="vendor-notes-input" rows="2" placeholder="Includes setup by 11 AM, overtime rate $150/hr..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="app.closeModal('add-vendor-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Vendor</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 5: SETTINGS & GEMINI API KEY
+       ======================================================== -->
+  <div class="modal-overlay" id="settings-api-key-modal">
+    <div class="modal-box" style="max-width: 540px;">
+      <div class="modal-header">
+        <div class="flex items-center gap-2">
+          <span>⚙️</span>
+          <h3>AI Engine & API Settings</h3>
+        </div>
+        <button class="btn-icon btn-secondary" onclick="app.closeModal('settings-api-key-modal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          EventGenie AI is equipped with a high-fidelity <strong>Offline Contextual Domain Engine (Demo Mode)</strong> that runs with 100% functionality without requiring an API key.
+        </p>
+
+        <div style="background: rgba(11, 17, 32, 0.6); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem;">
+          <label class="form-label" style="color: #38bdf8;">Google Gemini API Key (Optional)</label>
+          <input type="password" id="settings-api-key-input" placeholder="AIzaSy..." />
+          <p style="font-size: 0.775rem; color: var(--text-dim); margin-top: 0.5rem;">
+            You can also configure <code style="color: #a78bfa;">GEMINI_API_KEY</code> inside your <code style="color: #a78bfa;">.env</code> file. Keys are processed securely and never published.
+          </p>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Leaving this blank runs the application in <strong>Demo AI Mode</strong>, using our rule-based expert heuristic engine.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeModal('settings-api-key-modal')">Cancel</button>
+        <button class="btn btn-primary" onclick="app.handleSaveApiKey()">Save & Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex justify-between items-center" style="flex-wrap: wrap; gap: 1rem;">
+      <div class="flex items-center gap-2">
+        <span style="font-size: 1.25rem;">🧞</span>
+        <strong>EventGenie AI</strong>
+        <span>— Intelligent Event Planning Co-Pilot</span>
+      </div>
+      <div style="font-size: 0.825rem; color: var(--text-dim);">
+        All financial calculations are programmatic mathematical estimates.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/sample-data.js"></script>
+  <script src="js/ai-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
