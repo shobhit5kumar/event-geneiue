@@ -1,0 +1,120 @@
+================================================================================
+EVENTGENIE AI - PROJECT SUBMISSION & DEPLOYMENT SUMMARY
+================================================================================
+
+1. PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Project Name    : EventGenie AI
+Tagline         : Intelligent Event Planning, Smart Budget & Timelines
+Repository      : https://github.com/shobhit5kumar/event-geneiue
+Target Platform : Web Application (Desktop, Tablet, Mobile)
+Architecture    : HTML5, Vanilla CSS3 (Custom Design System), ES6+ JavaScript,
+                  Python 3 Backend API / Vite Build Tooling for Vercel
+
+
+2. CHANGES & UPDATES MADE IN THE DEPLOYED VERSION
+--------------------------------------------------------------------------------
+A. User Interface & Design System:
+   - Modern, premium aesthetic featuring a deep navy (#0B1120), violet (#7C3AED),
+     and soft cyan (#38BDF8) palette with glassmorphism and subtle micro-animations.
+   - High-converting Landing Page with Hero section, live metric counters, feature
+     cards, and pre-loaded sample event showcase cards.
+   - Responsive Dashboard Workspace with tab navigation (Master Plan, Smart Budget,
+     Checklist & Run Sheet, Vendor Hub, AI Assistant, Dossier Export).
+   - Global Modal System (New Event Wizard, Add Expense Item, Add Task, Add Vendor,
+     API Settings) and Toast Notification System.
+
+B. AI Event Planner:
+   - Interactive Event Wizard supporting Weddings, Birthdays, College Fests,
+     Corporate Galas, Community Celebrations, and Private Parties.
+   - Captures guest scale, target budget, currency ($/INR/EUR/GBP), theme, vibe,
+     and special constraints (dietary, music, rain backup).
+   - Automated plan synthesis with multi-step progress animations.
+
+C. Smart Budget Planner (Strict Programmatic Arithmetic):
+   - Strict programmatic arithmetic calculations ensuring 100% financial accuracy
+     (does not rely on LLM arithmetic).
+   - Dynamic real-time sliders for guest count and budget adjustments that
+     automatically recalculate category allocations.
+   - Interactive line-item manager: add custom expenses, edit estimated vs actual
+     costs, and toggle "Paid" escrow status.
+   - Visual budget health gauge (Committed vs Remaining cushion) with over-budget
+     warning indicator.
+   - Prominent disclaimer labeling prices as planning estimates, not binding quotes.
+
+D. Checklist & Master Run Sheet:
+   - Milestone preparation checklist phased into 6+ Months Out, 2-3 Months Out,
+     1 Month Out, 1 Week Out, and Event Day.
+   - Interactive completion checkboxes, priority tagging (Critical, Medium, Low),
+     filtering, and completion percentage progress indicators.
+   - Dedicated Event-Day Master Schedule providing hour-by-hour operational run
+     sheets from vendor load-in to midnight sendoff.
+
+E. Advisory Vendor Hub & Directory:
+   - Comprehensive negotiation guide across 5 categories (Venue, Catering, Decor,
+     Photography, Entertainment) with "Must-Ask Questions" and "Red Flags".
+   - Personal Vendor Directory to save and manage user-entered vendor contacts,
+     quotes, booking statuses, and contract notes.
+   - Explicit disclaimer confirming categories are advisory, not endorsed vendors.
+
+F. Persistence & Sample Data:
+   - 3 Pre-loaded rich sample events ready for immediate testing:
+     1. Royal Botanical Garden Wedding (200 guests, $35,000 budget)
+     2. Cyberpunk Neon 21st Birthday (80 guests, $6,500 budget)
+     3. TechNova 2026 College Tech Fest & Gala (500 guests, $15,000 budget)
+   - Dual-persistence engine: file-based JSON store (data/events.json) synced with
+     browser localStorage.
+   - One-click "Print / Save PDF Dossier" view and JSON export/import.
+
+G. Deployment & Build Fixes:
+   - Configured package.json with Vite dependencies to resolve cloud build errors.
+   - Added vite.config.js and vercel.json for automated zero-config Vercel builds.
+   - Configured public/data/events.json static asset bundling.
+   - Retained local Python 3 server (server.py) and start.bat for local execution.
+
+
+3. GENERATIVE AI SERVICES UTILIZED & WHERE THEY ARE IMPLEMENTED
+--------------------------------------------------------------------------------
+A. Generative AI Service:
+   - Primary: Google Gemini API (gemini-1.5-flash / gemini-2.0 models) via a secure
+     backend proxy (server-side environment variable GEMINI_API_KEY).
+     API keys are never exposed in frontend code.
+   - Fallback / Demo Engine: Built-in Smart Offline Contextual Domain Engine
+     (Demo AI Mode) that provides immediate, fully functional domain reasoning
+     without requiring an API key.
+
+B. Where Generative AI is Utilized in the Application:
+
+   1. AI Master Plan Synthesis (/api/ai/plan):
+      - Executive Summary & Theme Narrative: Generates cohesive vision concepts
+        tailored to the host, occasion, and guest count.
+      - Venue Matching: Analyzes scale and budget to propose 2-3 curated venue
+        concepts with capacity fit, pros, cons, and cost expectations.
+      - Decor & Ambience Architecture: Designs entrance focal points, table styling,
+        lighting schemes, and custom interactive photo installations.
+      - Culinary & Beverage Blueprint: Formulates multi-course catering menus,
+        dietary accommodations (Vegan/GF), and signature cocktail/mocktail recipes.
+      - Entertainment Flow: Plans musical genres, timeline cues, and audience
+        engagement moments.
+
+   2. Conversational Event Co-Pilot (/api/ai/chat):
+      - Context-Aware Event Consultation: Chat assistant receives the full context
+        of the active event (title, type, guest count, budget, theme, location, date).
+      - Budget Optimization Advisory: Generates high-impact, practical cost-saving
+        strategies without sacrificing guest experience.
+      - Guest Communication & Etiquette: Drafts polite, customized RSVP reminder
+        templates for WhatsApp and Email.
+      - Signature Beverage Mixology: Designs themed cocktails and zero-proof drinks
+        with recipes, garnishes, and whimsical names.
+      - Weather & Emergency Contingencies: Outlines actionable 72-hour rain
+        contingency action plans and tent drainage logistics.
+      - Schedule Bottleneck Analysis: Evaluates event-day timelines and recommends
+        transitional buffers for speeches, dinner, and photography.
+
+   3. Quick-Prompt Intelligence:
+      - Powers interactive one-click prompt chips on the chat interface to deliver
+        immediate event advice for non-technical hosts.
+
+================================================================================
+End of Summary Document
+================================================================================
