@@ -1,42 +1,41 @@
 ================================================================================
-EVENTGENIE AI - SUBMISSION FORM ANSWERS (~950 CHARACTERS EACH)
+EVENTGENIE AI - SUBMISSION FORM ANSWERS (STRICT <= 1024 CHARACTER LIMIT)
 ================================================================================
 
 --------------------------------------------------------------------------------
 QUESTION 1: Describe the changes/updates made in the deployed version
+[Character Count: 973 characters | Max Limit: 1024 | Status: OK]
 --------------------------------------------------------------------------------
-EventGenie AI is an AI-powered event planning web application with the following key deployed updates:
+Key deployed updates in EventGenie AI:
 
-• Modern UI/UX: Engineered a glassmorphic interface (deep navy #0B1120, violet #7C3AED, cyan #38BDF8) featuring a landing page, 6-tab dashboard, interactive modal dialogs, and toast notifications.
-• AI Event Plan Synthesis: Guided multi-step wizard supporting weddings, birthdays, fests, and galas that drafts executive vision summaries, curated venues, decor concepts, catering menus, and entertainment flow.
-• Programmatic Smart Budget: Replaced generative math with deterministic arithmetic calculations. Features dynamic guest/budget adjustment sliders, itemized cost tracking, paid escrow toggles, and over-budget warnings.
-• Checklist & Run Sheet: Phased milestone timeline (6+ months to event day) with priority filters, progress gauges, and an hour-by-hour operational run sheet.
-• Vendor Hub & Cloud Ready: Advisory negotiation guide, custom vendor directory, dual JSON/localStorage persistence, and Vite build tooling for seamless Vercel hosting.
-
-[Character Count: 955 chars with spaces]
+• UI/UX: Glassmorphic interface (navy #0B1120, violet #7C3AED, cyan #38BDF8) with micro-animations, responsive landing page, 6-tab dashboard, interactive modals, and toast alerts.
+• AI Event Plan Synthesis: Guided wizard for weddings, birthdays, fests, and galas. Generates tailored vision summaries, venue concepts, decor/lighting plans, catering menus, and entertainment flow.
+• Programmatic Budget Planner: Strict arithmetic calculation engine (no LLM math errors). Features real-time sliders for guest/budget recalculation, itemized tracking, paid toggles, and over-budget alerts.
+• Checklist & Run Sheet: Phased preparation timeline (6+ months to event day) with priority filters, progress tracking, and an hour-by-hour operational day schedule.
+• Vendor Hub & Cloud Ready: Negotiation guides with red flags, custom directory for confirmed quotes, dual JSON/localStorage sync, and Vite build tooling for seamless Vercel hosting.
 
 
 --------------------------------------------------------------------------------
 QUESTION 2: Mention the Gen AI services utilized, and where did you utilize it?
+[Character Count: 949 characters | Max Limit: 1024 | Status: OK]
 --------------------------------------------------------------------------------
-EventGenie AI incorporates a dual-tier Generative AI architecture:
+Generative AI architecture and utilization in EventGenie AI:
 
-• Gen AI Service: Google Gemini API (gemini-1.5-flash / gemini-2.0) accessed through a secure server-side proxy (API key stored via server environment variables, never exposed to clients). It includes a built-in offline Contextual Domain Engine (Demo AI Mode) ensuring full operational availability.
+• Gen AI Service: Google Gemini API (gemini-1.5-flash / gemini-2.0) via secure backend proxy (keys never exposed to clients). Includes an offline Contextual Domain Engine (Demo AI Mode) for full functionality without an API key.
 
 • Where Gen AI is Utilized:
-1. Event Plan Synthesis (/api/ai/plan): Generates tailored event narratives, venue recommendations with pros/cons, thematic decor/lighting concepts, multi-course catering menus with dietary options (Vegan/GF), signature cocktails/mocktails, and musical program highlights.
-2. Conversational Co-Pilot (/api/ai/chat): A context-aware chat assistant that evaluates active event parameters (guests, budget, theme, location) to deliver budget-saving strategies, polite RSVP reminder drafts (WhatsApp/Email), 72-hour rain contingency protocols, and schedule bottleneck reviews.
-3. Quick Prompt Chips: Delivers instant curated planning advice for non-technical event hosts.
-
-[Character Count: 978 chars with spaces]
+1. Event Plan Synthesis (/api/ai/plan): Generates tailored event narratives, venue recommendations with pros/cons, decor/lighting concepts, multi-course catering menus with dietary options (Vegan/GF), signature cocktails/mocktails, and musical highlights.
+2. Conversational Co-Pilot (/api/ai/chat): A context-aware chat assistant evaluating active event parameters (guests, budget, theme, location) to deliver cost-saving strategies, polite RSVP reminder drafts (WhatsApp/Email), 72-hour rain contingencies, and schedule bottleneck reviews.
+3. Quick Prompt Chips: Delivers instant curated planning advice for non-technical hosts.
 
 
 --------------------------------------------------------------------------------
-OPTIONAL: BOTH QUESTIONS COMBINED IN A SINGLE BOX (~950 CHARS TOTAL)
+OPTIONAL: BOTH QUESTIONS COMBINED IN A SINGLE 1024-CHAR BOX
+[Character Count: 991 characters | Max Limit: 1024 | Status: OK]
 --------------------------------------------------------------------------------
-EventGenie AI is an intelligent event planning web application deployed on Vercel with zero-dependency Python local server support.
+EventGenie AI is an intelligent event planning web app deployed on Vercel with zero-dependency Python local server support.
 
-1. Updates Made in Deployed Version:
+1. Updates in Deployed Version:
 • Glassmorphic UI/UX (navy/purple/cyan) with landing page, 6-tab dashboard, modals, and toast alerts.
 • Multi-step event creation wizard for weddings, birthdays, and fests.
 • Programmatic Smart Budget: 100% deterministic arithmetic (no LLM math errors), dynamic sliders, line-item tracking, and paid toggles.
@@ -47,6 +46,4 @@ EventGenie AI is an intelligent event planning web application deployed on Verce
 2. Gen AI Services & Utilization:
 • Service: Google Gemini API (gemini-1.5-flash) via secure proxy + offline heuristic engine.
 • Utilization: (1) Synthesizes full event plans (themes, venues, catering, decor, entertainment). (2) Powers conversational co-pilot for budget saving, RSVP drafts, and rain contingencies.
-
-[Character Count: 958 chars with spaces]
 ================================================================================
